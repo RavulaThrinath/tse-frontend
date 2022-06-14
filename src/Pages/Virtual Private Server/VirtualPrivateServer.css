@@ -1,0 +1,88 @@
+.vps-container {
+  position: relative;
+  width: 100%;
+  height: 260vh;
+  background: url("../../Assets/Vps.png") no-repeat;
+  background-size: contain;
+  background-color: #ffffff;
+}
+.vps-content {
+  width: 100%;
+  max-width: 85%;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #ffffff;
+  padding: 70px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.082);
+}
+.vps-content h2 {
+  font-family: "four", sans-serif;
+  opacity: 0.8;
+}
+.vps-content p {
+  font-family: "three", sans-serif;
+  line-height: 30px;
+  opacity: 0.8;
+  font-size: 16px;
+}
+.vps-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+.vps-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.vps-wrapper svg {
+  padding: 10px;
+  font-size: 55px;
+  border-radius: 10px;
+}
+.vps-wrapper h3 {
+  font-size: 18px;
+  color: #0f2137;
+  font-weight: 600;
+  margin-bottom: 3px;
+  font-family: "four", sans-serif;
+}
+.vps-wrapper span {
+  font-size: 16px;
+  color: #000000;
+  opacity: .7;
+  line-height: 32px;
+  font-family: "three", sans-serif;
+}
+.con-1 svg {
+  background-color: rgba(255, 67, 97, 10.12%);
+  color: #ff4361;
+}
+.con-2 svg {
+  background-color: #eaf9ff;
+  color: #3dabdd;
+}
+.con-3 svg {
+  background-color: #fff6d3;
+  color: #d6ab00;
+}
+.con-4 svg {
+  background-color: #e4ffee;
+  color: #40975f;
+}
+.con-5 svg {
+  background-color: #f4f4ff;
+  color: #5856d6;
+}
+.con-6 svg {
+  background-color: rgba(233, 116, 37, 12%);
+  color: #e97425;
+}

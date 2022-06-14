@@ -1,0 +1,67 @@
+.services-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  max-width: 90%;
+}
+.services-box {
+  padding: 40px 20px;
+  text-align: center;
+  margin: 0 15px;
+  font-family: "three", sans-serif;
+  box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+}
+.service-1 svg {
+  color: #40975f;
+  background-color: #e4ffee;
+  padding: 10px;
+  font-size: 45px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.service-2 svg {
+  color: #2563ff;
+  background-color: rgba(37, 95, 255, 9%);
+  padding: 10px;
+  font-size: 45px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.service-3 svg {
+  color: #ff4361;
+  background-color: rgba(255, 67, 97, 10%);
+  padding: 10px;
+  font-size: 45px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.service-4 svg {
+  color: #3dabdd;
+  background-color: #eaf9ff;
+  padding: 10px;
+  font-size: 45px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.services-box h3 {
+  font-family: "four", sans-serif;
+  color: #4e4d5c;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.services-box p {
+  color: #6f6e78;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  line-height: 23px;
+  font-weight: 500;
+}
+.services-box a {
+  color: #33333b;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 10px 0;
+}

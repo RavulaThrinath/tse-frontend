@@ -1,0 +1,85 @@
+.cs-container {
+  position: relative;
+  width: 100%;
+  height: 190vh;
+  background: url("../../Assets/Consultancy.png") no-repeat;
+  background-size: contain;
+  background-color: #ffffff;
+}
+.cs-content {
+  width: 100%;
+  max-width: 85%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #ffffff;
+  padding: 70px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.082);
+}
+.cs-content h2 {
+  font-family: "four", sans-serif;
+}
+.cs-content p {
+  font-family: "three", sans-serif;
+  line-height: 30px;
+  opacity: 0.8;
+  font-size: 16px;
+}
+.ser-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+}
+.ser-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.ser-wrapper svg {
+  padding: 10px;
+  font-size: 45px;
+  border-radius: 10px;
+}
+.ser-wrapper h3 {
+  font-size: 16px;
+  color: #0f2137;
+  font-weight: 600;
+  margin-bottom: 3px;
+  font-family: "three", sans-serif;
+}
+.ser-wrapper span {
+  font-size: 14px;
+  color: #000000;
+  opacity: .7;
+  font-family: "three", sans-serif;
+}
+.con-1 svg {
+  background-color: rgba(255, 67, 97, 10.12%);
+  color: #ff4361;
+}
+.con-2 svg {
+  background-color: #eaf9ff;
+  color: #3dabdd;
+}
+.con-3 svg {
+  background-color: #fff6d3;
+  color: #d6ab00;
+}
+.con-4 svg {
+  background-color: #e4ffee;
+  color: #40975f;
+}
+.con-5 svg {
+  background-color: #f4f4ff;
+  color: #5856d6;
+}
+.con-6 svg {
+  background-color: rgba(233, 116, 37, 12%);
+  color: #e97425;
+}

@@ -1,0 +1,93 @@
+.footer {
+  background: url(../../Assets/Footer.svg) no-repeat;
+  background-size: 105%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 30px 0;
+  gap: 70px;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.footer-left {
+  color: #fff;
+}
+.footer-title {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "four", sans-serif;
+  margin-bottom: 10px;
+}
+.footer-des {
+  font-family: "three", sans-serif;
+  opacity: 0.7;
+  font-size: 16px;
+  white-space: pre-line;
+  margin-bottom: 15px;
+}
+.sm-icons {
+  display: flex;
+  gap: 10px;
+}
+.sm-icons svg {
+  color: #fff;
+  font-size: 25px;
+  background-color: rgb(255, 255, 255, 0.05);
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sm-icons svg:hover {
+  background-color: rgb(255, 255, 255, 0.15);
+}
+.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+}
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.links-title {
+  color: #ffffff;
+  font-size: 17px;
+  font-family: "three", sans-serif;
+  font-weight: 900;
+}
+.links-list {
+  color: #ffffff;
+  font-family: "three", serif;
+  font-weight: 300;
+  font-size: 14px;
+  opacity: 0.7;
+}
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 14px;
+  font-family: "three", sans-serif;
+}
+.footer-bottom h4 {
+  font-weight: 400;
+  opacity: 0.7;
+}
+.footer-bottom ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0.7;
+  list-style-type: none;
+}

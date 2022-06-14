@@ -1,0 +1,77 @@
+.mentors-container {
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 70px auto;
+}
+.mentors-left {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  color: #000000;
+  white-space: pre-line;
+}
+.mentor-title {
+  font-size: 35px;
+  font-family: "four", sans-serif;
+  line-height: 45px;
+  font-weight: 600;
+}
+.mentors-left::after {
+  position: absolute;
+  content: "MENTORS";
+  background-color: #2a529814;
+  color: #2a5298;
+  top: -10%;
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 7px 10px;
+}
+.mentors-left p {
+  font-size: 17px;
+  font-family: "three", sans-serif;
+  font-weight: 500;
+  opacity: 0.8;
+  line-height: 30px;
+}
+
+.mentors-points {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.mentors-spes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.mentors-spes img {
+  width: 20px;
+}
+.mentors-spes p {
+  font-size: 15px;
+  font-family: "three", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+.mentors-btn {
+  border: none;
+  background-color: #2a5298;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.mentors-right img {
+  display: block;
+  width: 100%;
+}
