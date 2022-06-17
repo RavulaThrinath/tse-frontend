@@ -1,17 +1,15 @@
 .steps-container {
-  background: url(../../Assets/Frame\ 75.svg) 100% 100%;
+  background: url(../../Assets/Frame\ 75.svg) no-repeat 100% 100%;
   background-size: 100%;
   position: relative;
   padding: 70px 0 160px 0;
   margin: 100px 0 180px 0;
 }
 .steps-heading {
-  font-size: 30px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 50px;
-  font-family: "three", sans-serif;
-  font-weight: 600;
+  margin-bottom: 70px;
+  font: 600 40px "three", sans-serif;
 }
 .steps-list {
   max-width: 70%;
@@ -22,12 +20,10 @@
 }
 .steps-digit {
   color: #22437d;
-  font-size: 30px;
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400;
+  font: 400 40px "Lexend Deca", sans-serif;
   background-color: #ffffff;
   border-radius: 22px;
-  padding: 10px;
+  padding: 15px;
 }
 .steps-box {
   display: flex;
@@ -38,33 +34,27 @@
 }
 .steps-title {
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  /* margin-top: 20px; */
+  font: 500 30px "Poppins", sans-serif;
 }
 .steps-desc {
   color: #ffffff;
   opacity: 0.7;
-  /* font-family: "three", sans-serif; */
-  font-size: 14px;
+  font-size: 20px;
   white-space: pre-line;
-  line-height: 22px;
+  line-height: 34px;
 }
-.arrow-1,
-.arrow-2,
-.arrow-3 {
+.arrow {
   position: absolute;
-  width: 120px;
+  width: 160px;
   opacity: 0.3;
 }
 .arrow-1 {
   top: 35%;
-  left: 23%;
+  left: 22%;
 }
 .arrow-2 {
   top: 40%;
-  left: 41%;
+  left: 42%;
 }
 
 .arrow-3 {
@@ -77,27 +67,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
   background-color: #ffffff;
   width: 65%;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 30px 0;
+  padding: 50px 0;
   box-shadow: 0px 25px 100px #45589d2a;
   border-radius: 20px;
 }
 .main-title {
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
+  font: 600 25px "Poppins", san-serif;
   color: #464555;
-  font-weight: 600;
 }
 .second-title {
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
+  font: 400 24px "Poppins", san-serif;
   color: #6f6e78;
-  font-weight: 400;
 }
 
 .arrow-4 {
@@ -108,6 +94,204 @@
   all: unset;
   background-color: #2a5298;
   color: #ffffff;
-  padding: 12px 20px;
+  padding: 20px 28px;
+  font-size: 22px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1536px) {
+  .steps-heading {
+    margin-bottom: 60px;
+    font-size: 35px;
+  }
+  .steps-digit {
+    font-size: 35px;
+  }
+  .steps-title {
+    font-size: 25px;
+  }
+  .steps-desc {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .arrow {
+    width: 140px;
+  }
+  .arrow-1 {
+    top: 37%;
+    left: 22.5%;
+  }
+  .arrow-3 {
+    top: 37%;
+    right: 30.5%;
+  }
+  .comm-container {
+    gap: 50px;
+    padding: 45px 0;
+  }
+  .main-title {
+    font-size: 21px;
+  }
+  .second-title {
+    font-size: 20px;
+  }
+  .gs-btn {
+    padding: 17px 23px;
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .steps-heading {
+    margin-bottom: 60px;
+    font-size: 30px;
+  }
+  .steps-digit {
+    font-size: 30px;
+    padding: 13px;
+  }
+  .steps-title {
+    font-size: 22px;
+  }
+  .steps-desc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .arrow {
+    width: 125px;
+  }
+  .arrow-1 {
+    top: 38%;
+  }
+  .arrow-2 {
+    left: 41.5%;
+  }
+  .arrow-3 {
+    top: 38%;
+    right: 31.2%;
+  }
+  .comm-container {
+    gap: 50px;
+    padding: 40px 0;
+  }
+  .main-title {
+    font-size: 20px;
+  }
+  .second-title {
+    font-size: 19px;
+  }
+  .gs-btn {
+    padding: 15px 23px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .steps-container {
+    padding: 70px 0 140px 0;
+  }
+  .steps-heading {
+    margin-bottom: 60px;
+    font-size: 25px;
+  }
+  .steps-digit {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .steps-title {
+    font-size: 19px;
+  }
+  .steps-desc {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .arrow {
+    width: 120px;
+  }
+  .arrow-1 {
+    top: 39%;
+    left: 22%;
+  }
+  .arrow-2 {
+    top: 42%;
+    left: 41.5%;
+  }
+  .arrow-3 {
+    top: 39%;
+    right: 30.5%;
+  }
+  .comm-container {
+    gap: 40px;
+    padding: 30px 0;
+  }
+  .main-title {
+    font-size: 18px;
+  }
+  .second-title {
+    font-size: 17px;
+  }
+  .gs-btn {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .steps-container {
+    background: url(../../Assets/Frame\ 75.svg) no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 60px 0 120px 0;
+  }
+  .steps-heading {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  .steps-list {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .steps-box {
+    gap: 10px;
+  }
+  .steps-digit {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .steps-title {
+    font-size: 19px;
+    margin-bottom: 0;
+  }
+  .steps-desc {
+    white-space: initial;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .arrow {
+    display: none;
+  }
+  .comm-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .main-title {
+    font-size: 16px;
+  }
+  .second-title {
+    font-size: 15px;
+  }
+  .gs-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  .arrow-4 {
+    display: none;
+  }
 }

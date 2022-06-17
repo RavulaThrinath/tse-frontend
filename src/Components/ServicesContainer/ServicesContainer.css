@@ -2,66 +2,139 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
   margin: 100px auto;
   max-width: 90%;
 }
 .services-box {
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
-  margin: 0 15px;
   font-family: "three", sans-serif;
   box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.07);
   border-radius: 20px;
 }
+.servicelist svg {
+  padding: 15px;
+  font-size: 70px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
 .service-1 svg {
   color: #40975f;
   background-color: #e4ffee;
-  padding: 10px;
-  font-size: 45px;
-  border-radius: 12px;
-  margin-bottom: 10px;
 }
 .service-2 svg {
   color: #2563ff;
   background-color: rgba(37, 95, 255, 9%);
-  padding: 10px;
-  font-size: 45px;
-  border-radius: 12px;
-  margin-bottom: 10px;
 }
 .service-3 svg {
   color: #ff4361;
   background-color: rgba(255, 67, 97, 10%);
-  padding: 10px;
-  font-size: 45px;
-  border-radius: 12px;
-  margin-bottom: 10px;
 }
 .service-4 svg {
   color: #3dabdd;
   background-color: #eaf9ff;
-  padding: 10px;
-  font-size: 45px;
-  border-radius: 12px;
-  margin-bottom: 10px;
 }
 .services-box h3 {
   font-family: "four", sans-serif;
   color: #4e4d5c;
-  font-size: 1rem;
-  margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 15px;
   font-weight: 600;
 }
 .services-box p {
   color: #6f6e78;
-  font-size: 0.8rem;
-  margin-bottom: 10px;
-  line-height: 23px;
+  font-size: 21px;
+  margin-bottom: 15px;
+  line-height: 33px;
   font-weight: 500;
 }
 .services-box a {
   color: #33333b;
-  font-size: 0.8rem;
+  font-size: 20px;
   font-weight: 500;
   margin: 10px 0;
+}
+
+@media screen and (max-width: 1536px) {
+  .services-box {
+    padding: 40px 20px;
+  }
+  .servicelist svg {
+    padding: 10px;
+    font-size: 50px;
+  }
+  .services-box h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .services-box p {
+    font-size: 17px;
+    margin-bottom: 12px;
+    line-height: 30px;
+  }
+  .services-box a {
+    font-size: 17px;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .services-box {
+    padding: 40px 20px;
+  }
+  .servicelist svg {
+    padding: 10px;
+    font-size: 50px;
+  }
+  .services-box h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  .services-box p {
+    font-size: 13.5px;
+    margin-bottom: 10px;
+    line-height: 27px;
+  }
+  .services-box a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .servicelist svg {
+    padding: 10px;
+    font-size: 47px;
+  }
+  .services-box h3 {
+    font-size: 17px;
+  }
+  .services-box p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-list {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .services-box {
+    padding: 40px 30px;
+    text-align: start;
+  }
+  .servicelist svg {
+    margin-bottom: 7px;
+  }
+  .services-box h3 {
+    font-size: 19px;
+    margin-bottom:5px;
+  }
+  .services-box p {
+    font-size: 15px;
+    line-height: 26px;
+    
+  }
 }

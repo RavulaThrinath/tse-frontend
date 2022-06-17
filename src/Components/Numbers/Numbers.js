@@ -8,7 +8,7 @@ export default function Numbers() {
       <div className="left-container">
         {numbersList.map((list) => (
           <div key={list.id} className="numbers-list">
-            <span className={list.class}>{list.count}</span>
+            <span className={`num-count ${list.class}`}>{list.count}</span>
             <p>{list.description}</p>
           </div>
         ))}

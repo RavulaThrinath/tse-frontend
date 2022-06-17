@@ -7,31 +7,26 @@
   align-items: center;
   gap: 100px;
   padding: 100px 0;
-  /* font-family: "Poppins", sans-serif; */
 }
 .left-container {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  gap: 30px;
 }
 .numbers-list {
   text-align: center;
-  padding: 60px 30px;
+  padding: 60px;
   background-color: #ffffff;
   box-shadow: 0px 3px 40px #45589d0b;
   border-radius: 10px;
   font-family: "three", sans-serif;
 }
 
-.first,
-.second,
-.third,
-.fourth {
-  font-size: 40px;
-  font-family: "four", sans-serif;
+.num-count {
+  font-size: 60px;
+  font-family: "one", sans-serif;
 }
 .first {
   color: #28d1dc;
@@ -46,11 +41,11 @@
   color: #28dcb2;
 }
 .numbers-list p {
-  font-size: 15px;
+  font-size: 20px;
   white-space: pre-line;
   color: #000000;
-  opacity: 0.9;
-  line-height: 22px;
+  opacity: 0.8;
+  line-height: 29px;
 }
 .right-container {
   position: relative;
@@ -62,34 +57,26 @@
   gap: 20px;
   font-family: "three", sans-serif;
 }
-/* .right-container::after {
-  position: absolute;
-  content: "PRICING";
-  background-color: #2a529814;
-  color: #2a5298;
-  top: -10%;
-  font-size: 11px;
-  border-radius: 8px;
-  padding: 7px 10px;
-} */
+
 .right-container h3 {
-  font-size: 35px;
+  font-size: 55px;
   font-family: "four", sans-serif;
   white-space: pre-line;
-  line-height: 45px;
+  line-height: 70px;
   font-weight: 600;
   color: #000000;
 }
 .right-container p {
   white-space: pre-line;
-  font-size: 17px;
+  font-size: 23px;
   color: #000000;
   opacity: 0.8;
-  line-height: 30px;
+  line-height: 40px;
 }
 .right-container a {
   color: #1e3c72;
   font-family: "three", sans-serif;
+  font-size: 20px;
 }
 
 .number-list {
@@ -100,12 +87,115 @@
 
 .number-list li {
   margin: 10px 0;
-  display: list-item;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  font-size: 22px;
 }
-.number-list li::marker {
-  text-align: center !important;
-  text-align-last: center !important;
+
+@media screen and (max-width: 1536px) {
+  .left-container {
+    gap: 25px;
+  }
+  .numbers-list {
+    padding: 50px 40px;
+  }
+  .num-count {
+    font-size: 45px;
+  }
+  .numbers-list p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .right-container h3 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .right-container p {
+    font-size: 19px;
+    line-height: 30px;
+  }
+  .number-list li {
+    font-size: 18px;
+    margin: 7px 0;
+  }
+  .right-container a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .left-container {
+    gap: 20px;
+  }
+  .numbers-list {
+    padding: 50px 30px;
+  }
+  .num-count {
+    font-size: 40px;
+  }
+  .numbers-list p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .right-container h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .right-container p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .number-list li {
+    font-size: 15px;
+    margin: 0;
+  }
+  .right-container a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .numbers-container {
+    flex-direction: column-reverse;
+    gap: 35px;
+    padding: 70px 0;
+  }
+  .left-container {
+    width: 100%;
+    max-width: 90%;
+    gap: 15px;
+  }
+  .numbers-list {
+    padding: 15px 20px 35px 20px;
+  }
+  .num-count {
+    font-size: 35px;
+  }
+  .numbers-list p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .right-container {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+  }
+  .right-container h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .right-container p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .number-list li {
+    font-size: 14px;
+    margin: 0;
+  }
+  .right-container a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .right-container p {
+    white-space: initial;
+  }
 }

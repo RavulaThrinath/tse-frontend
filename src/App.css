@@ -1,3 +1,25 @@
+/* 1920 * 1080 */
+/* 1536 * 864 */
+/* 1440 * 900 */
+/* 1366 * 768 */
+/* 1280 * 720 */
+
+
+/* @media screen and (max-width: 1536px)
+
+@media screen and (max-width: 1366px)
+
+@media screen and (max-width: 1280px)
+
+@media screen and (max-width: 480px) */
+
+
+
+
+
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
@@ -63,10 +85,7 @@ body {
   font-family: seven;
   src: url(./Fonts/calluna-it-webfont.woff);
 }
-@font-face {
-  font-family: eight;
-  src: url(./Fonts/BebasNeue-webfont.woff);
-}
+
 @font-face {
   font-family: "gordita bold";
   src: url("./Fonts/gordita-bold-webfont.woff2") format("woff2"),
@@ -94,4 +113,8 @@ ul {
 }
 a {
   text-decoration: none;
+}
+
+button, a {
+  cursor: pointer;
 }

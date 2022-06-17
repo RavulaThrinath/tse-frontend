@@ -20,9 +20,9 @@ export default function Steps() {
         ))}
       </div>
       <div>
-        <img className="arrow-1" src={arrow1} alt="" />
-        <img className="arrow-2" src={arrow2} alt="" />
-        <img className="arrow-3" src={arrow3} alt="" />
+        <img className="arrow-1 arrow" src={arrow1} alt="" />
+        <img className="arrow-2 arrow" src={arrow2} alt="" />
+        <img className="arrow-3 arrow" src={arrow3} alt="" />
       </div>
       <div className="comm-container">
         <div>

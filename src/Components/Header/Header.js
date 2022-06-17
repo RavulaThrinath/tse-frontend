@@ -1,15 +1,56 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Header.css";
 import Logo2 from "../../Assets/Logo2.png";
+import showPwdImg from "../../Assets/show.svg";
+import hidePwdImg from "../../Assets/hide.svg";
 import { Link } from "react-router-dom";
-// import Signup from "../../Dialogs/Sample/Sample";
+import Modal from "../../Dialogs/Dialog";
 import useScrollListener from "./Hook";
+import googleicon from "../../Assets/Google icon.svg";
+import appleicon from "../../Assets/Apple icon.svg";
+import { BsList } from "react-icons/bs";
 
 export default function Header() {
+  const [showSignUp, setShowSignUp] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(false);
+  const [showEmailLogin, setShowEmailLogin] = useState(false);
+  const [showforgotpassword, setShowforgotpassword] = useState(false);
+  const [showOtp, setShowOtp] = useState(false);
+
+  // Show / hide password
+  const [pwd, setPwd] = useState("");
+  const [isRevealPwd, setIsRevealPwd] = useState(false);
+
+  // open signin page in signup page
+  const openSignIn = () => {
+    setShowSignIn(true);
+    setShowSignUp(false);
+  };
+  const openEmailLogin = () => {
+    setShowEmailLogin(true);
+    setShowSignIn(false);
+  };
+  const openSignUp = () => {
+    setShowSignUp(true);
+    setShowEmailLogin(false);
+  };
+  const resetPassword = () => {
+    setShowforgotpassword(true);
+    setShowEmailLogin(false);
+  };
+  const backToSignin = () => {
+    openEmailLogin(true);
+    setShowforgotpassword(false);
+  };
+  const otpPage = () => {
+    setShowOtp(true);
+    setShowforgotpassword(false);
+  };
+
+  // update classList of nav on scroll
   const [navClassList, setNavClassList] = useState([]);
   const scroll = useScrollListener();
 
-  // update classList of nav on scroll
   useEffect(() => {
     const _classList = [];
 
@@ -18,12 +59,22 @@ export default function Header() {
 
     setNavClassList(_classList);
   }, [scroll.y, scroll.lastY]);
+
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive-nav");
+  };
+
   return (
     <>
       <nav className={navClassList.join(" ")}>
         <Link to="/">
-          <img src={Logo2} alt="" width="70px" />
+          <img className="header-logo" src={Logo2} alt="" />
         </Link>
+        <button onClick={showNavbar} className="hamburger">
+          <BsList />
+        </button>
         <ul className="header-links">
           <li>
             <Link to="/">Home</Link>
@@ -55,29 +106,203 @@ export default function Header() {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
-        <div>
-          <button className="sign in">Sign in</button>
-          <button className="sign up">Sign up</button>
+
+        {/* sign in and sign up buttons  */}
+
+        <div className="sign">
+          <button onClick={() => setShowSignIn(true)} className="sign in">
+            Sign in
+          </button>
+          <button onClick={() => setShowSignUp(true)} className="sign up">
+            Sign up
+          </button>
         </div>
       </nav>
 
-      {/* <Signup /> */}
+      {/* dialog for sign up */}
+
+      <Modal
+        isVisible={showSignUp}
+        title="Sign up"
+        description="Create an account and discover new world."
+        content={
+          <form>
+            <div className="su-user-details">
+              <input type="text" placeholder="Full Name" required />
+              <input type="email" placeholder="Email" required />
+              <div className="password-input">
+                <input
+                  type={isRevealPwd ? "text" : "password"}
+                  value={pwd}
+                  onChange={(e) => setPwd(e.target.value)}
+                  placeholder="Password"
+                  required
+                />
+                <img
+                  src={isRevealPwd ? hidePwdImg : showPwdImg}
+                  title={isRevealPwd ? "Hide password" : "Show password"}
+                  onClick={() => setIsRevealPwd((prevState) => !prevState)}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="su-checkbox">
+              <input type="checkbox" />I accept the
+              <Link to="/">Terms of Service</Link> and
+              <Link to="/">Privacy Policy.</Link>
+            </div>
+            <button className="dialog-btn">Create your account</button>
+          </form>
+        }
+        footer={
+          <p>
+            Already have an account?{" "}
+            <button onClick={openSignIn} className="silent-btn">
+              Sign in
+            </button>
+          </p>
+        }
+        onClose={() => setShowSignUp(false)}
+      />
+
+      {/* dialog for sign in */}
+
+      <Modal
+        isVisible={showSignIn}
+        title="Welcome"
+        description={`Sign in to your account and \n discover a new world.`}
+        content={
+          <div className="auths">
+            <div className="social-auths">
+              <Link to="/" className="google auth">
+                <img src={googleicon} alt="" />
+                <h4>Continue with Google</h4>
+              </Link>
+              <Link to="/" className="apple auth">
+                <img src={appleicon} alt="" />
+                <h4>Continue with Apple</h4>
+              </Link>
+            </div>
+            <div className="cwg-cont">
+              <p>OR</p>
+              <button className="dialog-btn" onClick={openEmailLogin}>
+                Continue with Email
+              </button>
+            </div>
+            <div className="terms-text">
+              {`By countinuing, you are agree to our Terms of Service. \n Read our Privacy Policy.`}
+            </div>
+          </div>
+        }
+        onClose={() => setShowSignIn(false)}
+      />
+
+      {/* dialog for email sign in */}
+
+      <Modal
+        isVisible={showEmailLogin}
+        title="Sign in"
+        description="Sign in with your email"
+        content={
+          <form>
+            <div className="su-user-details">
+              <input type="text" placeholder="Username" required />
+              <div className="password-input">
+                <input
+                  type={isRevealPwd ? "text" : "password"}
+                  value={pwd}
+                  onChange={(e) => setPwd(e.target.value)}
+                  placeholder="Password"
+                  required
+                />
+                <img
+                  src={isRevealPwd ? hidePwdImg : showPwdImg}
+                  title={isRevealPwd ? "Hide password" : "Show password"}
+                  onClick={() => setIsRevealPwd((prevState) => !prevState)}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="su-checkbox">
+              <input type="checkbox" />I accept the
+              <Link to="/">Terms of Service</Link> and
+              <Link to="/">Privacy Policy.</Link>
+            </div>
+            <button className="dialog-btn">Login</button>
+          </form>
+        }
+        footer={
+          <div className="footer-content">
+            <p>
+              Forgot password?{" "}
+              <button onClick={resetPassword} className="silent-btn">
+                Reset
+              </button>
+            </p>
+            <p>
+              Don’t have an account?{" "}
+              <button onClick={openSignUp} className="silent-btn">
+                Sign up
+              </button>
+            </p>
+          </div>
+        }
+        onClose={() => setShowEmailLogin(false)}
+      />
+
+      {/* modal for forgot password  */}
+
+      <Modal
+        isVisible={showforgotpassword}
+        title2="Forgot password?"
+        description={`Enter the email address associated \n with your account. We will email you a \n 4-digit code to reset your password`}
+        content={
+          <form>
+            <div className="su-user-details">
+              <input type="email" placeholder="Enter your email" required />
+            </div>
+
+            <button className="dialog-btn" onClick={otpPage}>
+              Send
+            </button>
+          </form>
+        }
+        footer={
+          <div className="footer-content">
+            <p>
+              Back to{" "}
+              <button onClick={backToSignin} className="silent-btn">
+                Sign in
+              </button>
+            </p>
+          </div>
+        }
+        onClose={() => setShowforgotpassword(false)}
+      />
+
+      {/* dialog for otp to recover account*/}
+      <Modal
+        isVisible={showOtp}
+        onClose={() => setShowOtp(false)}
+        title=""
+        heading={`Enter the verification code we just \n sent you on your email address`}
+        description=""
+        content={
+          <div className="otp-content">
+            <form className="otp">
+              <input maxLength="1" />
+              <input maxLength="1" />
+              <input maxLength="1" />
+              <input maxLength="1" />
+            </form>
+            <p className="resend-text">
+              If you didn’t receive a code!{" "}
+              <button className="silent-btn">resend</button>
+            </p>
+            <button className="dialog-btn">Verify</button>
+          </div>
+        }
+      />
     </>
   );
 }
-
-// export function debounce(func, wait, immediate) {
-//   var timeout;
-//   return function () {
-//     var context = this,
-//       args = arguments;
-//     var later = function () {
-//       timeout = null;
-//       if (!immediate) func.apply(context, args);
-//     };
-//     var callNow = immediate && !timeout;
-//     clearTimeout(timeout);
-//     timeout = setTimeout(later, wait);
-//     if (callNow) func.apply(context, args);
-//   };
-// }

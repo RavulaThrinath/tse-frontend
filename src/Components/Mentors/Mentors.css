@@ -18,9 +18,9 @@
   white-space: pre-line;
 }
 .mentor-title {
-  font-size: 35px;
+  font-size: 55px;
   font-family: "four", sans-serif;
-  line-height: 45px;
+  line-height: 70px;
   font-weight: 600;
 }
 .mentors-left::after {
@@ -34,11 +34,11 @@
   padding: 7px 10px;
 }
 .mentors-left p {
-  font-size: 17px;
+  font-size: 23px;
   font-family: "three", sans-serif;
   font-weight: 500;
   opacity: 0.8;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 .mentors-points {
@@ -54,10 +54,10 @@
   gap: 10px;
 }
 .mentors-spes img {
-  width: 20px;
+  width: 18px;
 }
 .mentors-spes p {
-  font-size: 15px;
+  font-size: 21px;
   font-family: "three", sans-serif;
   font-weight: 500;
   color: #000000;
@@ -68,10 +68,112 @@
   color: #ffffff;
   padding: 12px 20px;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .mentors-right img {
   display: block;
   width: 100%;
+}
+
+@media screen and (max-width: 1536px) {
+  .mentor-title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .mentors-left p {
+    font-size: 19px;
+    line-height: 30px;
+  }
+  .mentors-spes img {
+    width: 16px;
+  }
+  .mentors-spes p {
+    font-size: 18px;
+  }
+  .mentors-btn {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .mentor-title {
+    font-size: 37px;
+    line-height: 47px;
+  }
+  .mentors-left p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .mentors-spes img {
+    width: 16px;
+  }
+  .mentors-spes p {
+    font-size: 16px;
+  }
+  .mentors-btn {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .mentors-left {
+    width: 45%;
+  }
+  .mentor-title {
+    font-size: 35px;
+    line-height: 47px;
+  }
+  .mentors-left p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .mentors-spes img {
+    width: 16px;
+  }
+  .mentors-spes p {
+    font-size: 15px;
+  }
+  .mentors-btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mentors-container {
+    max-width: 90%;
+   flex-direction: column-reverse;
+   gap: 30px;
+  }
+  .mentors-left::after {
+   display: none;
+  }
+  .mentors-left {
+    width: 100%;
+    gap: 15px;
+  }
+  .mentor-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .mentors-left p {
+    font-size: 14px;
+    line-height: 25px;
+    white-space: initial;
+  }
+  .mentors-spes img {
+    width: 13px;
+  }
+  .mentors-spes p {
+    font-size: 14px;
+  }
+  .mentors-btn {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .mentor-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }

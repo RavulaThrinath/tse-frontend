@@ -74,13 +74,13 @@ export const ServicesContent = [
 export const numbersList = [
   {
     id: 0,
-    count: "80K+",
+    count: "8K+",
     description: `We have more than \n customers`,
     class: "first",
   },
   {
     id: 1,
-    count: "150+",
+    count: "100+",
     description: `Free online tutorials \n videos avaialble`,
     class: "second",
   },
@@ -195,12 +195,12 @@ export const footerLinks3 = [
 
 export const accordionContent = [
   {
-    question: "How much does it cost to be a credit card merchant?",
+    question: "How much it cost to be a credit card merchant?",
     answer:
       "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
   },
   {
-    question: "How much does it cost to be a credit card merchant?",
+    question: "How much it cost to be a credit card merchant?",
     answer:
       "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
   },

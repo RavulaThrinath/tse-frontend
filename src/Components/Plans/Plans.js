@@ -4,7 +4,7 @@ import "./Plans.css";
 import single from "../../Assets/Single.svg";
 import double from "../../Assets/Team.svg";
 import triple from "../../Assets/Organization.svg";
-import truetick from "../../Assets/Plan tick.svg";
+import truetick from "../../Assets/Tr.svg";
 import falsetick from "../../Assets/false.svg";
 import {Link} from "react-router-dom"
 

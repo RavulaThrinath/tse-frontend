@@ -16,10 +16,8 @@ export default function Faq() {
         </div>
         <div className="faq-content">
           <div className="faq-left">
-            <h1>{`Do you have any quesiton? \n We are here to help you`}</h1>
-            <p>
-              {`If your question is not list here, please \n feel free to make a manual support.`}
-            </p>
+            <h1>{`If your question is not list here, please \n feel free to make a manual support.`}</h1>
+            <p>{``}</p>
             <button className="ayq-button">Ask your Question</button>
           </div>
           <AccordionComponent />

@@ -12,15 +12,12 @@ import Plans from "../../Components/Plans/Plans";
 export default function Home() {
   return (
     <>
-      <div className="home">
-        <Landing />
-      </div>
+      <Landing />
       <ServicesContainer />
       <Numbers />
       <Mentors />
       <Steps />
       <Plans />
-      
       <Testimonials />
       <Faq />
     </>
