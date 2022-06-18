@@ -4,7 +4,6 @@
 /* 1366 * 768 */
 /* 1280 * 720 */
 
-
 /* @media screen and (max-width: 1536px)
 
 @media screen and (max-width: 1366px)
@@ -13,39 +12,15 @@
 
 @media screen and (max-width: 480px) */
 
-
-
-
-
-
-
-
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:regular,700,900);
-@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
-@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:regular,700);
-@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200;300;400;500;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Mohave:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
 @import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,italic,500,500italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Lexend+Deca:100,200,300,regular,500,600,700,800,900);
 
@@ -55,66 +30,17 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Inter", sans-serif;
-}
-@font-face {
-  font-family: one;
-  src: url(./Fonts/MarkPro-Heavy.woff2);
-}
-@font-face {
-  font-family: two;
-  src: url(./Fonts/MarkPro-Bold.woff2);
-}
-@font-face {
-  font-family: three;
-  src: url(./Fonts/Eina01-Regular.woff2);
-}
-@font-face {
-  font-family: four;
-  src: url(./Fonts/Eina01-Bold.woff2);
-}
-@font-face {
-  font-family: five;
-  src: url(./Fonts/calluna-semibold-webfont.woff);
-}
-@font-face {
-  font-family: six;
-  src: url(./Fonts/calluna-light-webfont.woff);
-}
-@font-face {
-  font-family: seven;
-  src: url(./Fonts/calluna-it-webfont.woff);
-}
-
-@font-face {
-  font-family: "gordita bold";
-  src: url("./Fonts/gordita-bold-webfont.woff2") format("woff2"),
-    url("./Fonts/gordita-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "gordita regular";
-  src: url("./Fonts/gordita-regular-webfont.woff2") format("woff2"),
-    url("./Fonts/gordita-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "gordita medium";
-  src: url("./Fonts/gordita-medium-webfont.woff2") format("woff2"),
-    url("./Fonts/gordita-medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Commissioner", sans-serif;
 }
 
 ul {
   list-style: none;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-button, a {
-  cursor: pointer;
+button,
+a {
+  cursor: pointer !important;
 }

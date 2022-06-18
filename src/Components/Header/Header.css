@@ -6,7 +6,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: "gordita regular", sans-serif;
+  font-family: "Commissioner", sans-serif;
   background: #ffffff;
   transition: transform 150ms ease-in-out;
   box-shadow: 1px 5px 5px #00000006;
@@ -17,33 +17,40 @@ nav {
 }
 
 .header-logo {
-  width: 130px;
+  width: 40px;
 }
-.hamburger {
-  display: none;
+.navbar-brand {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-right: 0 !important;
+  text-decoration: none;
+  white-space: nowrap;
 }
-.header-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
+.navbar-expand-lg .navbar-collapse  {
+  justify-content: center !important;
+  align-items: center !important;
 }
-.header-links li a {
-  font-size: 27px;
-  color: #000000;
-  margin: 0 20px;
-  transition: all 0.3s ease-in-out;
+
+/* .navbar-collapse {
+  flex-grow: 0 !important;
+} */
+
+.navbar>.container {
+  justify-content: space-between !important;
 }
-.header-links li a:hover {
-  color: #1e3c72;
+
+.navbar-light .navbar-toggler {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
 }
+
 .sign {
   all: unset;
-  padding: 15px 24px;
+  padding: 8px 18px;
   border-radius: 50px;
   margin: 0 7px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 14px;
 }
 .in {
   border: 1.5px solid #1e3c72;
@@ -56,39 +63,10 @@ nav {
   background: #1e3c72;
 }
 
-.main-menu {
-  position: relative;
-  width: 100%;
-}
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  height: auto;
-  position: absolute;
-  color: #000000;
-  top: 100%;
-  left: 0;
-  background: #ffffff;
-  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.15);
-  border-radius: 10px;
-  display: none;
-  padding: 20px;
-  transition: transform 150ms ease-in-out;
-}
-.dropdown li {
-  margin: 5px 0;
-  padding: 10px 0;
-  border-radius: 10px;
-}
-.main-menu:hover .dropdown {
-  display: block;
-}
-.dropdown li:hover {
-  background-color: #00000007;
-}
 
-@media screen and (max-width: 1280px) {
+
+
+/* @media screen and (max-width: 1280px) {
   .header-logo {
     width: 70px;
   }
@@ -103,8 +81,8 @@ nav {
     width: 250px;
     padding: 10px 5px;
   }
-}
-@media screen and (max-width: 480px) {
+} */
+/* @media screen and (max-width: 480px) {
   nav {
     width: 100%;
     justify-content: space-between;
@@ -116,14 +94,4 @@ nav {
     display: flex;
     flex-direction: column;
   }
-  .responsive-nav {
-    transform: none;
-  }
-  .sign {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-    color: #000000;
-  }
-}
+} */

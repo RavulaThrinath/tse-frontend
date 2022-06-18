@@ -1,14 +1,15 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
-import Logo2 from "../../Assets/Logo2.png";
+import Logo2 from "../../Assets/Logo2.svg";
 import showPwdImg from "../../Assets/show.svg";
 import hidePwdImg from "../../Assets/hide.svg";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Modal from "../../Dialogs/Dialog";
 import useScrollListener from "./Hook";
 import googleicon from "../../Assets/Google icon.svg";
 import appleicon from "../../Assets/Apple icon.svg";
-import { BsList } from "react-icons/bs";
+import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Header() {
   const [showSignUp, setShowSignUp] = useState(false);
@@ -60,64 +61,52 @@ export default function Header() {
     setNavClassList(_classList);
   }, [scroll.y, scroll.lastY]);
 
-  const navRef = useRef();
-
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsive-nav");
-  };
-
   return (
     <>
-      <nav className={navClassList.join(" ")}>
-        <Link to="/">
-          <img className="header-logo" src={Logo2} alt="" />
-        </Link>
-        <button onClick={showNavbar} className="hamburger">
-          <BsList />
-        </button>
-        <ul className="header-links">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/pricing">Pricing</Link>
-          </li>
-          <li className="main-menu">
-            <Link to="/">Services</Link>
-            <ul className="dropdown">
-              <li>
-                <Link to="/BusinessStrategy">Business Strategy</Link>
-              </li>
-              <li>
-                <Link to="/ConsultancyServices">Consultancy Services</Link>
-              </li>
-              <li>
-                <Link to="/LicenseConfiguration">License Configuration</Link>
-              </li>
-              <li>
-                <Link to="/VirtualPrivateServer">Virtual Private Server</Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-
-        {/* sign in and sign up buttons  */}
-
-        <div className="sign">
-          <button onClick={() => setShowSignIn(true)} className="sign in">
-            Sign in
-          </button>
-          <button onClick={() => setShowSignUp(true)} className="sign up">
-            Sign up
-          </button>
-        </div>
-      </nav>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        sticky="top"
+        className={navClassList.join(" ")}
+      >
+        <Container>
+          <Navbar.Brand href="#home">
+            <img className="header-logo" src={Logo2} alt="" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link to="/">Home</Nav.Link>
+              <Nav.Link to="/about">About</Nav.Link>
+              <Nav.Link to="/pricing">Pricing</Nav.Link>
+              <NavDropdown title="Services" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">
+                  Business Strategy
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action4">
+                  Consultancy Services
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action5">
+                  License Configuration
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action5">
+                  Virtual Private Server
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link to="/contact">Contact</Nav.Link>
+            </Nav>
+            {/* sign in and sign up buttons  */}
+            <Nav className="sign">
+              <button onClick={() => setShowSignIn(true)} className="sign in">
+                Sign in
+              </button>
+              <button onClick={() => setShowSignUp(true)} className="sign up">
+                Sign up
+              </button>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
       {/* dialog for sign up */}
 
@@ -306,3 +295,18 @@ export default function Header() {
     </>
   );
 }
+
+// <ul className="dropdown">
+//               <li>
+//                 <Link to="/BusinessStrategy">Business Strategy</Link>
+//               </li>
+//               <li>
+//                 <Link to="/ConsultancyServices">Consultancy Services</Link>
+//               </li>
+//               <li>
+//                 <Link to="/LicenseConfiguration">License Configuration</Link>
+//               </li>
+//               <li>
+//                 <Link to="/VirtualPrivateServer">Virtual Private Server</Link>
+//               </li>
+//             </ul>

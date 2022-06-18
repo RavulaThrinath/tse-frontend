@@ -9,18 +9,7 @@
   text-align: center;
   margin-bottom: 60px;
 }
-.testi-title::after {
-  position: absolute;
-  content: "TESTIMONIALS";
-  background-color: #2a529814;
-  color: #2a5298;
-  top: -60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 12px;
-  border-radius: 8px;
-  padding: 7px 10px;
-}
+
 .testi-title h1 {
   font-size: 50px;
 }

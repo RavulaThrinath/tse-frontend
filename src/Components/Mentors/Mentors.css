@@ -23,16 +23,7 @@
   line-height: 70px;
   font-weight: 600;
 }
-.mentors-left::after {
-  position: absolute;
-  content: "MENTORS";
-  background-color: #2a529814;
-  color: #2a5298;
-  top: -10%;
-  font-size: 12px;
-  border-radius: 8px;
-  padding: 7px 10px;
-}
+
 .mentors-left p {
   font-size: 23px;
   font-family: "three", sans-serif;

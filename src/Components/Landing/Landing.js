@@ -11,7 +11,7 @@ export default function Landing() {
     dots: true,
     infinite: true,
     fade: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     speed: 500,
     arrows: false,
@@ -19,6 +19,15 @@ export default function Landing() {
     verticalSwiping: true,
     slidesToShow: 1,
     pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+        },
+      },
+    ],
   };
 
   return (
@@ -30,10 +39,8 @@ export default function Landing() {
               <h2>{list.maintext}</h2>
               <p>{list.subtext}</p>
               <div className="landing-btns">
-                <button className="primary-btn" >
-                  {list.primaryBtn}
-                </button>
-                
+                <button className="primary-btn">{list.primaryBtn}</button>
+
                 <button className="secondary-btn">
                   <BsFillPlayCircleFill />
                   <span>{list.secondaryBtn}</span>
@@ -41,7 +48,8 @@ export default function Landing() {
               </div>
             </div>
             <div>
-              <img className="landing-img"
+              <img
+                className="landing-img"
                 src={require(`../../Assets/${list.rightImage}.svg`)}
                 alt=""
               />

@@ -11,18 +11,7 @@
   text-align: center;
   margin-bottom: 60px;
 }
-.plans-title::after {
-  position: absolute;
-  content: "PRICING";
-  background-color: #2a529814;
-  color: #2a5298;
-  top: -20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 22px;
-  border-radius: 8px;
-  padding: 7px 10px;
-}
+
 .plans-title h1 {
   font-family: "four", sans-serif;
   text-align: center;
