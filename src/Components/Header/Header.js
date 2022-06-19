@@ -8,8 +8,9 @@ import Modal from "../../Dialogs/Dialog";
 import useScrollListener from "./Hook";
 import googleicon from "../../Assets/Google icon.svg";
 import appleicon from "../../Assets/Apple icon.svg";
-import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Squash as Hamburger } from "hamburger-react";
+// import { Dropdown } from "rsuite";
+// import "rsuite/dist/rsuite.min.css";
 
 export default function Header() {
   const [showSignUp, setShowSignUp] = useState(false);
@@ -17,6 +18,7 @@ export default function Header() {
   const [showEmailLogin, setShowEmailLogin] = useState(false);
   const [showforgotpassword, setShowforgotpassword] = useState(false);
   const [showOtp, setShowOtp] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   // Show / hide password
   const [pwd, setPwd] = useState("");
@@ -63,50 +65,50 @@ export default function Header() {
 
   return (
     <>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        sticky="top"
-        className={navClassList.join(" ")}
-      >
-        <Container>
-          <Navbar.Brand href="#home">
-            <img className="header-logo" src={Logo2} alt="" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link to="/">Home</Nav.Link>
-              <Nav.Link to="/about">About</Nav.Link>
-              <Nav.Link to="/pricing">Pricing</Nav.Link>
-              <NavDropdown title="Services" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">
-                  Business Strategy
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Consultancy Services
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action5">
-                  License Configuration
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action5">
-                  Virtual Private Server
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link to="/contact">Contact</Nav.Link>
-            </Nav>
-            {/* sign in and sign up buttons  */}
-            <Nav className="sign">
-              <button onClick={() => setShowSignIn(true)} className="sign in">
-                Sign in
-              </button>
-              <button onClick={() => setShowSignUp(true)} className="sign up">
-                Sign up
-              </button>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <nav className={navClassList.join(" ")}>
+        <img className="header-logo" src={Logo2} alt="" />
+
+        <div
+          className="hamburger"
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
+          <Hamburger size={20} />
+        </div>
+
+        <div
+          className={
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+          }
+        >
+          <ul>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/pricing">Pricing</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
+          </ul>
+          <div className="sign">
+            <button onClick={() => setShowSignIn(true)} className="sign in">
+              Sign in
+            </button>
+            <button onClick={() => setShowSignUp(true)} className="sign up">
+              Sign up
+            </button>
+          </div>
+        </div>
+      </nav>
 
       {/* dialog for sign up */}
 
@@ -295,6 +297,18 @@ export default function Header() {
     </>
   );
 }
+
+// const CustomDropdown = ({ ...props }) => (
+//   <Dropdown {...props}>
+//     <Dropdown.Item>New File</Dropdown.Item>
+//     <Dropdown.Item>New File with Current Profile</Dropdown.Item>
+//     <Dropdown.Item>Download As...</Dropdown.Item>
+//     <Dropdown.Item>Export PDF</Dropdown.Item>
+//     <Dropdown.Item>Export HTML</Dropdown.Item>
+//     <Dropdown.Item>Settings</Dropdown.Item>
+//     <Dropdown.Item>About</Dropdown.Item>
+//   </Dropdown>
+// );
 
 // <ul className="dropdown">
 //               <li>

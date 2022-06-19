@@ -21,11 +21,10 @@
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.082);
   color: #000000;
 }
-.lc-content h2 {
-  font-family: "four", sans-serif;
-}
+/* .lc-content h2 {
+  font-family: "Commissioner", sans-serif;
+} */
 .lc-content p {
-  font-family: "three", sans-serif;
   line-height: 30px;
   opacity: 0.8;
   font-size: 16px;

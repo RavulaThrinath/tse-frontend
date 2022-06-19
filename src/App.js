@@ -8,7 +8,7 @@ import BusinessStrategy from "./Pages/Business Strategy/BusinessStrategy";
 import ConsultancyServices from "./Pages/Consultancy Services/ConsultancyServices";
 import LicenseConfiguration from "./Pages/License Configuration/LicenseConfiguration";
 import VirtualPrivateServer from "./Pages/Virtual Private Server/VirtualPrivateServer";
-// import Footer from "./Components/Footer/Footer";
+import Footer from "./Components/Footer/Footer";
 import ScrollTop from "./Components/ScrollTop";
 import Header from "./Components/Header/Header";
 
@@ -40,7 +40,7 @@ function App() {
             element={<VirtualPrivateServer />}
           ></Route>
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

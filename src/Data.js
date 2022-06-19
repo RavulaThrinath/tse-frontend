@@ -195,29 +195,29 @@ export const footerLinks3 = [
 
 export const accordionContent = [
   {
-    question: "How much it cost to be a credit card merchant?",
+    question: "How does Forex compare to other Markets?",
     answer:
-      "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
+      "Unlike stocks, futures, or options, currency trading does not take place on a regulated exchange, and it is not controlled by any central governing body. There are no clearing houses to guarantee trades, and there is no arbitration panel to adjudicate disputes. All members trade with each other based on credit agreements. Essentially, business in the largest, most liquid market in the world depends on nothing more than a metaphorical handshake.",
   },
   {
-    question: "How much it cost to be a credit card merchant?",
+    question: "What is the Forex Commission?",
     answer:
-      "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
+      "Investors who trade stocks, futures, or options typically use a broker who acts as an agent in the transaction. The broker takes the order to an exchange and attempts to execute it per the customer's instructions. The broker is paid a commission when the customer buys and sells the tradable instrument for providing this service.",
   },
   {
-    question: "How long does the application take?",
+    question: "What is a Pip?",
     answer:
-      "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
+      "Pip stands for percentage in point and is the smallest increment of trade in FX. In the FX market, prices are quoted to the fourth decimal point. For example, if a bar of soap in the drugstore was priced at $1.20, in the FX market the same bar of soap would be quoted at 1.2000. The change in that fourth decimal point is called 1 pip and is typically equal to 1/100th of 1%.",
   },
   {
-    question: "Can I make payment outside of Hong Kong?",
+    question: "What are you really Trading?",
     answer:
-      "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
+      "FX traders hope to profit from changes in exchange rates between currency pairs. For dollar-denominated accounts, all profits or losses are calculated in dollars and recorded as such on the trader's account",
   },
   {
-    question: "How do I get the payment complete?",
+    question: "What is a Currency Carry Trade?",
     answer:
-      "For our recent trip to S.A. I booked several accommodation thru SA Places. I just wanted to tell you that everything worked out perfectly with all the bookings and also your booking was very quick and professional. I hope I have the opportunity to re-visit South Africa soon, I will then make my bookings with your company again. I will also recommend",
+      "Carry is the most popular trade in the currency market, practiced by both the largest hedge funds and the smallest retail speculators. The carry trade is based on the fact that every currency in the world has an associated interest. These short-term interest rates are set by the central banks of these countries: the Federal Reserve in the United States, the Bank of Japan in Japan, and the Bank of England in the United Kingdom.",
   },
 ];
 
@@ -225,38 +225,38 @@ export const testimonialsContent = [
   {
     title: "malachy Onah ",
     place: "Nigeria",
-    img: "./",
-    text: "My name is Malachy Ozoemena onah, I joined Trade Sense Expert this January 2022 and the experience with the company has been awesome, one of the things that entice me most in this company is their transparency. one of the things that entice me most in this company is their transparency.",
+    img: "Test 1",
+    text: "I’ve been waiting for this service for such a long time! I’ve been following your signals for a few months already and they are fantastic, but it wasn’t that easy to copy them and kept missing too many of them. I’ve never seen such a professional service! Subscribing to your premium account was one of the best decisions I’ve made…",
   },
   {
-    title: "malachy Onah ",
-    place: "Nigeria",
-    img: "./",
-    text: "My name is Malachy Ozoemena onah, I joined Trade Sense Expert this January 2022 and the experience with the company has been awesome, one of the things that entice me most in this company is their transparency. one of the things that entice me most in this company is their transparency.",
+    title: "Frank Karlini ",
+    place: "Canada",
+    img: "Test 2",
+    text: "Your service is amazing! By getting the signals directly to my email in real time, I almost never miss a trade. Before I had your premium service, I also had some nice profits each month, but with the premium account, my profits just doubled! I just made last Thank you FX Market Leaders team, keep up the good work.",
   },
   {
-    title: "malachy Onah ",
-    place: "Nigeria",
-    img: "./",
-    text: "My name is Malachy Ozoemena onah, I joined Trade Sense Expert this January 2022 and the experience with the company has been awesome, one of the things that entice me most in this company is their transparency. one of the things that entice me most in this company is their transparency.",
+    title: "Genna Frester ",
+    place: "Germany",
+    img: "Test 3",
+    text: "Well since the day I have been checking and copying your signals I found it 90% profitable, because  of the time difference I follow your signals only 4 hours a day buts its more than enough Thank you fx market leaders, you really proved yourself the market leaders or I would say for me fx market champions.",
   },
   {
-    title: "malachy Onah ",
-    place: "Nigeria",
-    img: "./",
-    text: "My name is Malachy Ozoemena onah, I joined Trade Sense Expert this January 2022 and the experience with the company has been awesome, one of the things that entice me most in this company is their transparency. one of the things that entice me most in this company is their transparency.",
+    title: "Jed Molloy ",
+    place: "Australia",
+    img: "Test 4",
+    text: "It’s been fantastic. I’ve been using it blindly on a demo account for the past few days and so far it has had a 100% success rate. The take profits seems really high at times. But so far I highly recommend this useful tool. But the hit rate is much higher than my expectations",
   },
   {
-    title: "malachy Onah ",
-    place: "Nigeria",
-    img: "./",
-    text: "My name is Malachy Ozoemena onah, I joined Trade Sense Expert this January 2022 and the experience with the company has been awesome, one of the things that entice me most in this company is their transparency. one of the things that entice me most in this company is their transparency.",
+    title: "Adam Thompson",
+    place: "London",
+    img: "Test 5",
+    text: "Your service is amazing! By getting the signals directly to my email in real time, I almost never miss a trade. Before I had your premium service, I also had some nice profits each month, but with the premium account, my profits just doubled! I just made last Thank you FX Market Leaders team, keep up the good work.",
   },
   {
-    title: "malachy Onah ",
-    place: "Nigeria",
-    img: "./",
-    text: "My name is Malachy Ozoemena onah, I joined Trade Sense Expert this January 2022 and the experience with the company has been awesome, one of the things that entice me most in this company is their transparency. one of the things that entice me most in this company is their transparency.",
+    title: "Krishna Kumar ",
+    place: "India",
+    img: "Test 6",
+    text: "Well since the day I have been checking and copying your signals I found it 90% profitable, because  of the time difference I follow your signals only 4 hours a day buts its more than enough Thank you fx market leaders, you really proved yourself the market leaders or I would say for me fx market champions.",
   },
 ];
 

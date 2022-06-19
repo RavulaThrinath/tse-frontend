@@ -7,20 +7,10 @@
 
 .plans-title {
   position: relative;
-  font-family: "Inter", sans-serif;
   text-align: center;
   margin-bottom: 60px;
 }
 
-.plans-title h1 {
-  font-family: "four", sans-serif;
-  text-align: center;
-  font-size: 60px;
-}
-.plans-title p {
-  color: #858b91;
-  margin: 5px 0;
-}
 .plans-list {
   position: relative;
   display: flex;
@@ -29,7 +19,7 @@
   gap: 40px;
 }
 .plans-sec {
-  width: 100%;  
+  width: 100%;
   border: 1px solid #e0e2e4;
   border-radius: 10px;
 }
@@ -44,6 +34,7 @@
 .plans-content h2 {
   font-size: 30px;
   margin: 25px 0;
+  font: 800 30px "Manrope", sans-serif;
 }
 
 .specification {
@@ -64,7 +55,6 @@
   line-height: 22px;
   opacity: 0.7;
   font-weight: 400;
-  font-family: "DM Sans", sans-serif;
 }
 .plan-spes img {
   margin-top: 4px;
@@ -86,8 +76,8 @@
 }
 .price-sec h2 {
   color: #2a5298;
-  font-size: 30px;
   margin-top: 6px;
+  font: 700 30px "Commissioner", sans-serif;
 }
 
 .rec-btn {
@@ -100,18 +90,15 @@
   padding: 5px 10px;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 1536px) {
-  .plans-title h1 {
-    font-size: 50px;
-  }
   .plans-content h2 {
     font-size: 25px;
   }
   .specification {
-    gap: 20 px;
+    gap: 20px;
   }
   .plan-spes p {
     font-size: 17px;
@@ -123,9 +110,7 @@
   .plans-list {
     gap: 20px;
   }
-  .plans-title h1 {
-    font-size: 40px;
-  }
+
   .pack-img {
     height: auto;
   }
@@ -159,16 +144,12 @@
 @media screen and (max-width: 480px) {
   .plans-container {
     max-width: 90%;
+    margin-bottom: 70px;
   }
   .plans-title {
     margin-bottom: 30px;
   }
-  .plans-title::after {
-    font-size: 11px;
-  }
-  .plans-title h1 {
-    font-size: 25px;
-  }
+
   .plans-sec {
     width: 100%;
   }

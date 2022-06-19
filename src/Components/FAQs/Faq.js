@@ -11,13 +11,13 @@ export default function Faq() {
   return (
     <>
       <div className="faq">
-        <div className="faq-title">
-          <h1>Frequently Ask Question </h1>
+        <div className="header-main">
+          <h1 className="title-main">Frequently Ask Questions </h1>
+          <p className="desc-main">Frequently Ask Question </p>
         </div>
         <div className="faq-content">
           <div className="faq-left">
-            <h1>{`If your question is not list here, please \n feel free to make a manual support.`}</h1>
-            <p>{``}</p>
+            <h1>{`Got a question? We're here to answer! If you don't see your question here, drop us a line.`}</h1>
             <button className="ayq-button">Ask your Question</button>
           </div>
           <AccordionComponent />

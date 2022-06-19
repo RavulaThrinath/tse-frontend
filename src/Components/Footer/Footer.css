@@ -1,46 +1,39 @@
 .footer {
   background: url(../../Assets/Footer.svg) no-repeat;
-  background-size: 105%;
-  width: 100%;
-  height: auto;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0 30px 0;
-  gap: 70px;
+  padding: 120px 0 50px 0;
+  gap: 100px;
+  color: #ffffff;
 }
 .footer-container {
+  width: 75%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-}
-.footer-left {
-  color: #fff;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .footer-title {
-  font-size: 22px;
-  font-weight: 600;
-  font-family: "four", sans-serif;
-  margin-bottom: 10px;
+  font: 600 30px "Open Sans";
+  margin-bottom: 13px;
 }
 .footer-des {
-  font-family: "three", sans-serif;
+  font: 400 20px "Open Sans";
   opacity: 0.7;
-  font-size: 16px;
   white-space: pre-line;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  line-height: 35px;
 }
 .sm-icons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 .sm-icons svg {
-  color: #fff;
-  font-size: 25px;
+  font-size: 40px;
   background-color: rgb(255, 255, 255, 0.05);
-  padding: 6px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -56,38 +49,201 @@
 .links-container {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 13px;
 }
 .links-title {
-  color: #ffffff;
-  font-size: 17px;
-  font-family: "three", sans-serif;
-  font-weight: 900;
+  font: 600 30px "Open Sans";
 }
 .links-list {
-  color: #ffffff;
-  font-family: "three", serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-size: 19px;
   opacity: 0.7;
+  color: #ffffff;
 }
 .footer-bottom {
-  width: 100%;
+  position: relative;
+  width: 75%;
   display: flex;
-  justify-content: space-around;
-  color: #fff;
-  font-size: 14px;
-  font-family: "three", sans-serif;
+  justify-content: space-between;
+}
+.footer-bottom::before {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  opacity: 0.1;
+  width: 100%;
+  height: .6px;
+  top: -40px;
 }
 .footer-bottom h4 {
-  font-weight: 400;
+  font: 400 20px "Commissioner";
   opacity: 0.7;
 }
 .footer-bottom ul {
+  font: 400 20px "Commissioner";
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   opacity: 0.7;
   list-style-type: none;
+}
+
+@media screen and (max-width: 1536px) {
+  .footer-container {
+    width: 85%;
+  }
+  .footer-title {
+    font: 600 25px "Open Sans";
+    margin-bottom: 13px;
+  }
+  .footer-des {
+    font: 400 19px "Open Sans";
+    line-height: 30px;
+  }
+  .sm-icons svg {
+    font-size: 35px;
+    padding: 8px;
+  }
+  .links-container {
+    gap: 11px;
+  }
+  .links-title {
+    font: 600 25px "Open Sans";
+  }
+  .links-list {
+    font-size: 18px;
+  }
+  .footer-bottom {
+    width: 85%;
+  }
+  .footer-bottom h4,
+  .footer-bottom ul {
+    font: 400 18px "Commissioner";
+  }
+}
+@media screen and (max-width: 1366px) {
+  .footer-container {
+    width: 85%;
+  }
+  .footer-title {
+    font: 600 22px "Open Sans";
+    margin-bottom: 13px;
+  }
+  .footer-des {
+    font: 400 17px "Open Sans";
+    line-height: 28px;
+  }
+  .sm-icons {
+    gap: 12px;
+  }
+  .sm-icons svg {
+    font-size: 30px;
+    padding: 8px;
+  }
+  .links-container {
+    gap: 11px;
+  }
+  .links-title {
+    font: 600 22px "Open Sans";
+  }
+  .links-list {
+    font-size: 16px;
+  }
+  .footer-bottom {
+    width: 85%;
+  }
+  .footer-bottom h4,
+  .footer-bottom ul {
+    font: 400 16px "Commissioner";
+  }
+}
+@media screen and (max-width: 1280px) {
+  .footer {
+    padding-top: 100px;
+  }
+  .footer-title {
+    font: 600 20px "Open Sans";
+    margin-bottom: 10px;
+  }
+  .footer-des {
+    font: 400 15px "Open Sans";
+    line-height: 26px;
+  }
+  .sm-icons {
+    gap: 12px;
+  }
+  .sm-icons svg {
+    font-size: 30px;
+    padding: 8px;
+  }
+  .links-container {
+    gap: 10px;
+  }
+  .links-title {
+    font: 600 20px "Open Sans";
+  }
+  .links-list {
+    font-size: 14px;
+  }
+  .footer-bottom {
+    width: 85%;
+  }
+  .footer-bottom h4,
+  .footer-bottom ul {
+    font: 400 14px "Commissioner";
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 60px 0 30px 0;
+    gap: 50px;
+  }
+  .footer-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer-title {
+    font: 600 21px "Open Sans";
+    margin-bottom: 5px;
+  }
+  .footer-des {
+    white-space: initial;
+    font: 400 15px "Open Sans";
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .sm-icons {
+    gap: 12px;
+  }
+  .sm-icons svg {
+    font-size: 25px;
+    padding: 6px;
+  }
+  .footer-right {
+    gap: 15px;
+  }
+  .links-container {
+    gap: 10px;
+  }
+  .links-title {
+    font: 600 17px "Open Sans";
+  }
+  .links-list {
+    font-size: 13px;
+  }
+  .footer-bottom::before {
+    top: -25px;
+  }
+  .footer-bottom {
+    width: 90%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .footer-bottom h4,
+  .footer-bottom ul {
+    font: 400 14px "Commissioner";
+  }
 }

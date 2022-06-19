@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="footer-left">
           <h1 className="footer-title">Trade Sense Expert</h1>
           <p className="footer-des">
-            {`Dedicated to making the business of \n financial trading seamless for individual \n traders/investors regardless of their \n knowledge and technical capacities`}
+            {`Dedicated to making the business of financial \n trading seamless for individual traders/investors \n regardless of their knowledge and technical capacities`}
           </p>
           <div className="sm-icons">
             <FaFacebookF />
@@ -38,7 +38,7 @@ export default function Footer() {
             })}
           </div>
           <div className="links-container">
-            <h1 className="links-title">Our Information</h1>
+            <h1 className="links-title">Information</h1>
             {footerLinks2.map((list, index) => {
               return (
                 <a key={index} href="./" alt="" className="links-list">

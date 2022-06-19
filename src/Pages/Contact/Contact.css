@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  font-family: "Poppins", sans-serif;
   gap: 100px;
   margin: 100px 0;
 }
@@ -82,7 +81,6 @@ form .textarea-box span.details {
   padding-left: 15px;
   border: 1.5px solid #0000001e;
   transition: all 0.3s ease;
-  font-family: "Poppins", sans-serif;
 }
 .user-details .textarea-box textarea {
   width: 100%;
@@ -95,7 +93,6 @@ form .textarea-box span.details {
   padding-left: 15px;
   border: 1.5px solid #0000001e;
   transition: all 0.3s ease;
-  font-family: "Poppins", sans-serif;
 }
 textarea {
   resize: none;
@@ -118,7 +115,6 @@ textarea {
   --button_color: #2a5298;
   --button_outline_color: #2c3a49;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin: 10px 0 30px 0;
   border: none;

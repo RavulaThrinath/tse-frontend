@@ -65,7 +65,6 @@
 }
 .modal-title-2 {
   font-size: 28px;
-  font-family: "one", sans-serif;
   opacity: 0.8;
   margin-bottom: 5px;
 }
@@ -77,12 +76,10 @@
 }
 .modal-heading h1 {
   font-size: 40px;
-  font-family: "one";
 }
 .modal-heading p {
   font-size: 15px;
   opacity: 0.6;
-  font-family: "Inter", sans-serif;
   font-weight: 500;
   padding: 0 10px;
   line-height: 22px;
@@ -149,7 +146,6 @@
   padding-left: 15px;
   border: 1.5px solid #0000001e;
   transition: all 0.3s ease;
-  font-family: "three", sans-serif;
   font-weight: 600;
 }
 .su-user-details input:focus {
@@ -183,7 +179,6 @@
   font-size: 11px;
   text-align: start;
   margin: 15px 0 5px 0;
-  font-family: "Inter";
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -202,7 +197,6 @@
   border-radius: 10px;
   color: #ffffff;
   border: none;
-  font-family: "Inter", sans-serif;
   font-weight: 500;
   margin: 15px 0;
   font-size: 16px;
@@ -237,7 +231,6 @@
   color: #000000;
   opacity: 0.7;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
 }
 .cwg-cont p {
   position: relative;

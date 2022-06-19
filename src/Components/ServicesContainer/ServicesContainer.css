@@ -7,11 +7,11 @@
   max-width: 90%;
 }
 .services-box {
-  padding: 50px 20px;
+  padding: 50px 25px;
   text-align: center;
-  font-family: "three", sans-serif;
   box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.07);
   border-radius: 20px;
+  color: #000000;
 }
 .servicelist svg {
   padding: 15px;
@@ -36,21 +36,19 @@
   background-color: #eaf9ff;
 }
 .services-box h3 {
-  font-family: "four", sans-serif;
-  color: #4e4d5c;
-  font-size: 28px;
   margin-bottom: 15px;
-  font-weight: 600;
+  font: 600 28px "Commissioner", sans-serif;
 }
 .services-box p {
-  color: #6f6e78;
   font-size: 21px;
   margin-bottom: 15px;
-  line-height: 33px;
+  line-height: 36px;
   font-weight: 500;
+  opacity: 0.7;
 }
 .services-box a {
-  color: #33333b;
+  color: #000000;
+  opacity: 0.6;
   font-size: 20px;
   font-weight: 500;
   margin: 10px 0;
@@ -92,9 +90,9 @@
     margin-bottom: 10px;
   }
   .services-box p {
-    font-size: 13.5px;
+    font-size: 14px;
     margin-bottom: 10px;
-    line-height: 27px;
+    line-height: 23px;
   }
   .services-box a {
     font-size: 14px;
@@ -111,7 +109,7 @@
   }
   .services-box p {
     font-size: 13px;
-    line-height: 24px;
+    line-height: 22px;
   }
 }
 
@@ -130,11 +128,10 @@
   }
   .services-box h3 {
     font-size: 19px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
   }
   .services-box p {
     font-size: 15px;
     line-height: 26px;
-    
   }
 }

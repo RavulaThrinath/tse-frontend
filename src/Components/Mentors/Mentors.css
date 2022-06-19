@@ -18,27 +18,24 @@
   white-space: pre-line;
 }
 .mentor-title {
-  font-size: 55px;
-  font-family: "four", sans-serif;
+  font: 800 55px "Manrope", sans-serif;
   line-height: 70px;
-  font-weight: 600;
 }
 
 .mentors-left p {
   font-size: 23px;
-  font-family: "three", sans-serif;
   font-weight: 500;
   opacity: 0.8;
   line-height: 40px;
 }
 
-.mentors-points {
+.tick-points {
   display: flex;
   flex-direction: column;
   gap: 5px;
   margin-bottom: 5px;
 }
-.mentors-spes {
+.ponints-list {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -49,7 +46,6 @@
 }
 .mentors-spes p {
   font-size: 21px;
-  font-family: "three", sans-serif;
   font-weight: 500;
   color: #000000;
 }

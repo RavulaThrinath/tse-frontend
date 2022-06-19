@@ -20,11 +20,10 @@
   padding: 70px;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.082);
 }
-.cs-content h2 {
-  font-family: "four", sans-serif;
-}
+/* .cs-content h2 {
+  font-family: "Commissioner", sans-serif;
+} */
 .cs-content p {
-  font-family: "three", sans-serif;
   line-height: 30px;
   opacity: 0.8;
   font-size: 16px;
@@ -51,13 +50,11 @@
   color: #0f2137;
   font-weight: 600;
   margin-bottom: 3px;
-  font-family: "three", sans-serif;
 }
 .ser-wrapper span {
   font-size: 14px;
   color: #000000;
   opacity: .7;
-  font-family: "three", sans-serif;
 }
 .con-1 svg {
   background-color: rgba(255, 67, 97, 10.12%);

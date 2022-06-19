@@ -1,6 +1,7 @@
 import React from "react";
 import "./Numbers.css";
 import { numbersList } from "../../Data";
+import numbersTick from "../../Assets/Numbers Tick.svg";
 
 export default function Numbers() {
   return (
@@ -18,9 +19,15 @@ export default function Numbers() {
         <p>
           {`Here at Trade Sense expert, we mean business. \n Refer as many people as you can and earn 10% \n recurring commission on all their subscriptions.`}
         </p>
-        <ul className="number-list">
-          <li>Unlimited design possibility</li>
-          <li>Completely responsive features</li>
+        <ul className="tick-points">
+          <li className="ponints-list">
+            <img src={numbersTick} alt="" />
+            <p>Unlimited design possibility</p>
+          </li>
+          <li className="ponints-list">
+            <img src={numbersTick} alt="" />
+            <p>Completely responsive features</p>
+          </li>
         </ul>
         <a href="./">Explore Details &#8594;</a>
       </div>

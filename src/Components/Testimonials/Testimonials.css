@@ -5,14 +5,10 @@
 
 .testi-title {
   position: relative;
-  font-family: "Inter", sans-serif;
   text-align: center;
   margin-bottom: 60px;
 }
 
-.testi-title h1 {
-  font-size: 50px;
-}
 .details {
   display: flex;
   justify-content: flex-start;
@@ -26,19 +22,14 @@
 .details h3 {
   font-size: 30px;
   text-transform: capitalize;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 .details p {
   font-size: 25px;
 }
 .testi-content {
-  font-size: 27px;
-  font-family: "three", sans-serif;
-  font-weight: 100;
-}
-.testimonial-container .slick-slider {
-  /* width: 90%; */
-  padding: 30px;
+  font: 100 32px "Commissioner", sans-serif;
+  line-height: 55px;
 }
 
 .testimonial-container .slick-prev::before,
@@ -46,20 +37,20 @@
   content: none !important;
 }
 .testimonial-container .slick-prev {
-  top: 17% !important;
-  left: 80% !important;
+  top: 11% !important;
+  left: 85% !important;
   z-index: 1;
 }
 .testimonial-container .slick-next {
-  top: 17% !important;
-  right: 10% !important;
+  top: 11% !important;
+  right: 7% !important;
   z-index: 1;
 }
 
 .testimonial-container .slick-prev svg,
 .testimonial-container .slick-next svg {
   color: #000000 !important;
-  font-size: 55px !important;
+  font-size: 60px !important;
   padding: 13px !important;
   border: 1px solid #000000 !important;
   border-radius: 50%;
@@ -79,12 +70,22 @@
   }
   .testi-content {
     font-size: 25px;
+    line-height: 45px;
+  }
+  .testimonial-container .slick-prev {
+    top: 14% !important;
+    left: 84% !important;
+  }
+  .testimonial-container .slick-next {
+    top: 14% !important;
+  }
+  .testimonial-container .slick-prev svg,
+  .testimonial-container .slick-next svg {
+    font-size: 50px !important;
+    padding: 12px !important;
   }
 }
 @media screen and (max-width: 1366px) {
-  .testi-title h1 {
-    font-size: 40px;
-  }
   .details img {
     width: 90px;
   }
@@ -96,23 +97,21 @@
   }
   .testi-content {
     font-size: 22px;
+    line-height: 38px;
   }
   .testimonial-container .slick-prev {
-    top: 19% !important;
+    top: 12% !important;
   }
   .testimonial-container .slick-next {
-    top: 19% !important;
+    top: 12% !important;
   }
   .testimonial-container .slick-prev svg,
   .testimonial-container .slick-next svg {
-    font-size: 45px !important;
-    padding: 13px !important;
+    font-size: 42px !important;
+    padding: 11px !important;
   }
 }
 @media screen and (max-width: 1280px) {
-  .testi-title h1 {
-    font-size: 35px;
-  }
   .details img {
     width: 70px;
   }
@@ -124,6 +123,7 @@
   }
   .testi-content {
     font-size: 20px;
+    line-height: 37px;
   }
   .testimonial-container .slick-prev svg,
   .testimonial-container .slick-next svg {
@@ -135,12 +135,7 @@
   .testimonial-container {
     max-width: 90%;
   }
-  .testi-title {
-    margin-bottom: 50px;
-  }
-  .testi-title h1 {
-    font-size: 25px;
-  }
+
   .details {
     gap: 12px;
   }
@@ -155,6 +150,7 @@
   }
   .testi-content {
     font-size: 15px;
+    line-height: 30px;
   }
   .testimonial-container .slick-slider {
     padding: 0px;
@@ -174,9 +170,6 @@
   }
 }
 @media screen and (max-width: 390px) {
-  .testi-title h1 {
-    font-size: 22px;
-  }
   .details {
     gap: 10px;
   }
@@ -192,10 +185,11 @@
   }
   .testi-content {
     font-size: 14px;
+    line-height: 25px;
   }
   .testimonial-container .slick-prev {
     top: 10% !important;
-    left: 78%!important;
+    left: 78% !important;
   }
   .testimonial-container .slick-next {
     top: 10% !important;

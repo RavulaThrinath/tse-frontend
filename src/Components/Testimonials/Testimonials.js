@@ -3,7 +3,7 @@ import "./Testimonials.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import profilecard from "../../Assets/profile card.png";
+// import profilecard from "../../Assets/profile card.png";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { testimonialsContent } from "../../Data";
 
@@ -28,8 +28,8 @@ export default function Testimonials() {
   const settings = {
     dots: false,
     infinite: false,
-    fade: false,
-    speed: 500,
+    fade: true,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
@@ -37,15 +37,16 @@ export default function Testimonials() {
   };
   return (
     <div className="testimonial-container">
-      <div className="testi-title">
-        <h1>What Our Traders/Client say</h1>
+      <div className="header-main">
+        <h1 className="title-main">Testimonials</h1>
+        <p className="desc-main">What Our Traders say</p>
       </div>
       <Slider {...settings}>
         {testimonialsContent.map((list, index) => {
           return (
             <div key={index}>
               <div className="details">
-                <img src={profilecard} alt="" />
+                <img src={require(`../../Assets/${list.img}.png`)} alt="" />
                 <div>
                   <h3>{list.title}</h3>
                   <p>{list.place}</p>

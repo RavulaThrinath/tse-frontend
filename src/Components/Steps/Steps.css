@@ -9,7 +9,7 @@
   text-align: center;
   color: #ffffff;
   margin-bottom: 70px;
-  font: 600 40px "three", sans-serif;
+  font: 600 40px;
 }
 .steps-list {
   max-width: 70%;
@@ -39,9 +39,9 @@
 .steps-desc {
   color: #ffffff;
   opacity: 0.7;
-  font-size: 20px;
   white-space: pre-line;
   line-height: 34px;
+  font: 400 20px "Commissioner";
 }
 .arrow {
   position: absolute;
@@ -78,11 +78,12 @@
   border-radius: 20px;
 }
 .main-title {
-  font: 600 25px "Poppins", san-serif;
+  font: 600 25px "Open Sans", san-serif;
   color: #464555;
+  margin-bottom: 5px;
 }
 .second-title {
-  font: 400 24px "Poppins", san-serif;
+  font: 400 24px "Open Sans", san-serif;
   color: #6f6e78;
 }
 
@@ -201,7 +202,7 @@
     font-size: 19px;
   }
   .steps-desc {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 20px;
   }
   .arrow {

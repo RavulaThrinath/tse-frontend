@@ -14,16 +14,16 @@ export default function Mentors() {
         <p>
           {`Experienced traders by your side. Leverage the 55+ \n  years  of their experience and finally crack the markets.`}
         </p>
-        <div className="mentors-points">
-          <div className="mentors-spes">
+        <div className="tick-points">
+          <div className="ponints-list">
             <img src={truetick} alt="" />
             <p>Chat 24/7 with our pro mentors</p>
           </div>
-          <div className="mentors-spes">
+          <div className="ponints-list">
             <img src={truetick} alt="" />
             <p>Experienced in the main financial markets</p>
           </div>
-          <div className="mentors-spes">
+          <div className="ponints-list">
             <img src={truetick} alt="" />
             <p>Every question will be answered</p>
           </div>

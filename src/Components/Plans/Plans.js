@@ -6,13 +6,16 @@ import double from "../../Assets/Team.svg";
 import triple from "../../Assets/Organization.svg";
 import truetick from "../../Assets/Tr.svg";
 import falsetick from "../../Assets/false.svg";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Plans = () => {
   return (
     <div className="plans-container">
-      <div className="plans-title">
-        <h1>What deal suit you perfect</h1>
+      <div className="header-main">
+        <h1 className="title-main">What deal suit you perfect</h1>
+        <p className="desc-main">
+          Pick a plan that fits your needs. We scale up with you.
+        </p>
       </div>
       <div className="plans-list">
         <PricingContainer
@@ -25,7 +28,7 @@ const Plans = () => {
           list3="Total assessment corrections with"
           list4="Ultimate access to all course"
           list5="Unlimited download of courses"
-          price="29.99/mo"
+          price=" $ 29.99/mo"
         />
         <button className="rec-btn">Recommended</button>
         <PricingContainer
@@ -38,7 +41,7 @@ const Plans = () => {
           list3="Total assessment corrections with"
           list4="Ultimate access to all course"
           list5="Unlimited download of courses"
-          price="49.99/mo"
+          price=" $ 49.99/mo"
         />
         <PricingContainer
           title="For Organization pack"
@@ -50,7 +53,7 @@ const Plans = () => {
           list3="Total assessment corrections with"
           list4="Ultimate access to all course"
           list5="Unlimited download of courses"
-          price="79.99/mo"
+          price=" $ 79.99/mo"
         />
       </div>
     </div>

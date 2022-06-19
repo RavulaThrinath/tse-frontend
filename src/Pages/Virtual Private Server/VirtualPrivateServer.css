@@ -21,11 +21,9 @@
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.082);
 }
 .vps-content h2 {
-  font-family: "four", sans-serif;
   opacity: 0.8;
 }
 .vps-content p {
-  font-family: "three", sans-serif;
   line-height: 30px;
   opacity: 0.8;
   font-size: 16px;
@@ -53,14 +51,12 @@
   color: #0f2137;
   font-weight: 600;
   margin-bottom: 3px;
-  font-family: "four", sans-serif;
 }
 .vps-wrapper span {
   font-size: 16px;
   color: #000000;
   opacity: .7;
   line-height: 32px;
-  font-family: "three", sans-serif;
 }
 .con-1 svg {
   background-color: rgba(255, 67, 97, 10.12%);
