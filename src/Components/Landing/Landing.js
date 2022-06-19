@@ -11,7 +11,7 @@ export default function Landing() {
     dots: true,
     infinite: true,
     fade: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     speed: 500,
     arrows: false,
