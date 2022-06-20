@@ -62,6 +62,9 @@ export default function Header() {
     setNavClassList(_classList);
   }, [scroll.y, scroll.lastY]);
 
+  const hamClick = () => {
+    setIsNavExpanded(!isNavExpanded);
+  };
   return (
     <>
       <nav className={navClassList.join(" ")}>
@@ -70,9 +73,8 @@ export default function Header() {
         </Link>
         <div
           className="hamburger"
-          onClick={() => {
-            setIsNavExpanded(!isNavExpanded);
-          }}
+          onClick={hamClick}
+          toggled={hamClick}
         >
           <Hamburger size={20} />
         </div>
@@ -86,7 +88,7 @@ export default function Header() {
             {navbarLinks.map((list, index) => (
               <li key={index}>
                 <NavLink
-                className="navlink"
+                  className="navlink"
                   activeClassName="active"
                   to={list.url}
                   onClick={() => {

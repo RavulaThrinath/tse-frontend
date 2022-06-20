@@ -1,34 +1,27 @@
 import React from "react";
 import "./Contact.css";
 import { ImLocation2 } from "react-icons/im";
-import {  FaEnvelope } from "react-icons/fa";
-import {  MdAccessTimeFilled } from "react-icons/md";
+import { FaEnvelope } from "react-icons/fa";
+import { MdAccessTimeFilled } from "react-icons/md";
 
 export default function Contact() {
-  const iconStyling = {
-    color: "#2A5298",
-    background: "#2A529820",
-    padding: "7px",
-    fontSize: "30px",
-    borderRadius: "50%",
-  };
   return (
     <>
       <div className="contact-container">
         <div className="contact-heading">
-        <h1>{`Please don't hesitate \n to send us a message`}</h1>
+          <h1>{`Please don't hesitate \n to send us a message`}</h1>
           <p>{`Consistently create net-profits regardless \n of market condition by intelligent forecasting`}</p>
           <div className="left">
             <div className="icons">
-              <FaEnvelope style={iconStyling} />
+              <FaEnvelope />
               <a href="mailto:info@techlabit.com">info@tradesenseexpert.com</a>
             </div>
             <div className="icons">
-              <MdAccessTimeFilled style={iconStyling} />
+              <MdAccessTimeFilled />
               <a href="tel:13616603451">Mon-Fri: 10:00-18:00 </a>
             </div>
             <div className="icons">
-              <ImLocation2 style={iconStyling} />
+              <ImLocation2 />
               <a
                 href="https://goo.gl/maps/9uxGwF74YU74eth68"
                 rel="noreferrer"

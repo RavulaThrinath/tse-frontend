@@ -78,12 +78,12 @@
   border-radius: 20px;
 }
 .main-title {
-  font: 600 25px "Open Sans", san-serif;
+  font: 600 25px "Commissioner", san-serif;
   color: #464555;
   margin-bottom: 5px;
 }
 .second-title {
-  font: 400 24px "Open Sans", san-serif;
+  font: 400 24px "Commissioner", san-serif;
   color: #6f6e78;
 }
 
@@ -275,17 +275,18 @@
     display: none;
   }
   .comm-container {
-    width: 90%;
+    width: 95%;
     flex-direction: column;
     gap: 10px;
     padding: 20px 0;
     text-align: center;
+    border-radius: 10px;
   }
   .main-title {
     font-size: 16px;
   }
   .second-title {
-    font-size: 15px;
+    font-size: 14px;
   }
   .gs-btn {
     padding: 10px 18px;
