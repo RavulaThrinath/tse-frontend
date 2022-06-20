@@ -6,14 +6,10 @@ export default function About() {
   return (
     <>
       <div className="about-container">
-        {/* <div className="about-heading">
-          <p>Welcome to TSE</p>
-          <h1>We’re grateful you’re here</h1>
-          <h2>Since 2021, we have been helping our clients</h2>
-        </div> */}
-        <div className="about-text">
-          <h2>About TSE</h2>
-          <p>
+        <div className="
+        conatiner-wrapper">
+          <h2 className="container-heading">About TSE</h2>
+          <p className="container-text">
             TSE LTD is a fintech trading consulting firm dedicated to making the
             business of financial trading seamless for individual
             traders/investors regardless of their knowledge and technical
@@ -21,7 +17,7 @@ export default function About() {
             to risk mitigation and portfolio management (RMPM) offering traders
             a solution for seamless, profitable and financial growth.
           </p>
-          <p>
+          <p className="container-text">
             We believe in working closely with our clients and we’re willing to
             adapt our services to respond to the rising demand for trading
             solutions to traders/investors as financial trading in the global

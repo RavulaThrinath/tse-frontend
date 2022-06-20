@@ -18,8 +18,8 @@ export default function Home() {
       <Mentors />
       <Steps />
       <Plans />
-      <Testimonials />
       <Faq />
+      <Testimonials />
     </>
   );
 }

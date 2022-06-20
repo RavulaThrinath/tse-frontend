@@ -11,6 +11,7 @@ import VirtualPrivateServer from "./Pages/Virtual Private Server/VirtualPrivateS
 import Footer from "./Components/Footer/Footer";
 import ScrollTop from "./Components/ScrollTop";
 import Header from "./Components/Header/Header";
+import { PaymentPage } from "./Components/PaymentPage/PaymentPage";
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
           <Route
             path="/VirtualPrivateServer"
             element={<VirtualPrivateServer />}
+          ></Route>
+          <Route
+            path="/payment"
+            element={<PaymentPage />}
           ></Route>
         </Routes>
         <Footer />

@@ -2,12 +2,12 @@ import React from "react";
 import "./Contact.css";
 import { ImLocation2 } from "react-icons/im";
 import {  FaEnvelope } from "react-icons/fa";
-import {  BiTimeFive } from "react-icons/bi";
+import {  MdAccessTimeFilled } from "react-icons/md";
 
 export default function Contact() {
   const iconStyling = {
-    color: "#ffffff",
-    background: "#2A5298",
+    color: "#2A5298",
+    background: "#2A529820",
     padding: "7px",
     fontSize: "30px",
     borderRadius: "50%",
@@ -24,7 +24,7 @@ export default function Contact() {
               <a href="mailto:info@techlabit.com">info@tradesenseexpert.com</a>
             </div>
             <div className="icons">
-              <BiTimeFive style={iconStyling} />
+              <MdAccessTimeFilled style={iconStyling} />
               <a href="tel:13616603451">Mon-Fri: 10:00-18:00 </a>
             </div>
             <div className="icons">

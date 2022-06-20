@@ -105,3 +105,65 @@ a {
     font-size: 13px;
   }
 }
+
+/* About and Services container css */
+
+.conatiner-wrapper {
+  position: absolute;
+  width: 100%;
+  max-width: 80%;
+  transform: translate(-50%, -50%);
+  padding: 100px;
+  background: #ffffff;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.082);
+}
+
+.container-heading {
+  font: 600 45px "Commissioner", sans-serif;
+  margin-bottom: 10px;
+}
+.container-text {
+  line-height: 40px;
+  opacity: 0.8;
+  font-size: 26px;
+}
+
+.f {
+  display: flex;
+}
+.fss {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.fsc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.fcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fccc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.g10 {
+  gap: 10px;
+}
+.g15 {
+  gap: 15px;
+}
+.g20 {
+  gap: 20px;
+}
+.g25 {
+  gap: 25px;
+}
+.g30 {
+  gap: 30px;
+}

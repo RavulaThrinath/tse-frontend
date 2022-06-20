@@ -100,7 +100,7 @@ export const PricingContainer = ({
           </div>
         </div>
       </div>
-      <Link to="./" className="price-sec">
+      <Link to="./payment" className="price-sec">
         <div>
           <span>Starting from</span>
           <h2>{price}</h2>

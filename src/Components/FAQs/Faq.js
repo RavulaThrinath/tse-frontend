@@ -6,6 +6,7 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import { accordionContent } from "../../Data";
+import {Link} from "react-router-dom"
 
 export default function Faq() {
   return (
@@ -18,7 +19,7 @@ export default function Faq() {
         <div className="faq-content">
           <div className="faq-left">
             <h1>{`Got a question? We're here to answer! If you don't see your question here, drop us a line.`}</h1>
-            <button className="ayq-button">Ask your Question</button>
+            <Link to="/contact" className="ayq-button">Ask your Question</Link>
           </div>
           <AccordionComponent />
         </div>

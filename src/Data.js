@@ -2,6 +2,28 @@ import { FaBeer } from "react-icons/fa";
 import { BsCurrencyDollar, BsFlag, BsServer } from "react-icons/bs";
 import { RiArticleLine } from "react-icons/ri";
 
+export const navbarLinks = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "About",
+    url: "/about",
+  },
+  {
+    title: "Services",
+    url: "/services",
+  },
+  {
+    title: "Pricing",
+    url: "/pricing",
+  },
+  {
+    title: "Contact",
+    url: "/contact",
+  },
+];
 export const landingContent = [
   {
     maintext: `Absoulte \n Trade Solution`,

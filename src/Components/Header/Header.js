@@ -9,8 +9,7 @@ import useScrollListener from "./Hook";
 import googleicon from "../../Assets/Google icon.svg";
 import appleicon from "../../Assets/Apple icon.svg";
 import { Squash as Hamburger } from "hamburger-react";
-// import { Dropdown } from "rsuite";
-// import "rsuite/dist/rsuite.min.css";
+import { navbarLinks } from "../../Data";
 
 export default function Header() {
   const [showSignUp, setShowSignUp] = useState(false);
@@ -66,8 +65,9 @@ export default function Header() {
   return (
     <>
       <nav className={navClassList.join(" ")}>
-        <img className="header-logo" src={Logo2} alt="" />
-
+        <Link to="./" className="header-logo">
+          <img src={Logo2} alt="" />
+        </Link>
         <div
           className="hamburger"
           onClick={() => {
@@ -83,21 +83,20 @@ export default function Header() {
           }
         >
           <ul>
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/pricing">Pricing</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
+            {navbarLinks.map((list, index) => (
+              <li key={index}>
+                <NavLink
+                className="navlink"
+                  activeClassName="active"
+                  to={list.url}
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
+                >
+                  {list.title}
+                </NavLink>
+              </li>
+            ))}
           </ul>
           <div className="sign">
             <button onClick={() => setShowSignIn(true)} className="sign in">
