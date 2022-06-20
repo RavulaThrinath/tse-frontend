@@ -62,9 +62,6 @@ export default function Header() {
     setNavClassList(_classList);
   }, [scroll.y, scroll.lastY]);
 
-  const hamClick = () => {
-    setIsNavExpanded(!isNavExpanded);
-  };
   return (
     <>
       <nav className={navClassList.join(" ")}>
@@ -73,8 +70,9 @@ export default function Header() {
         </Link>
         <div
           className="hamburger"
-          onClick={hamClick}
-          toggled={hamClick}
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
         >
           <Hamburger size={20} />
         </div>
@@ -89,7 +87,7 @@ export default function Header() {
               <li key={index}>
                 <NavLink
                   className="navlink"
-                  activeClassName="active"
+                  activeclassname="active"
                   to={list.url}
                   onClick={() => {
                     setIsNavExpanded(!isNavExpanded);
@@ -139,9 +137,12 @@ export default function Header() {
               </div>
             </div>
             <div className="su-checkbox">
-              <input type="checkbox" />I accept the
-              <Link to="/">Terms of Service</Link> and
-              <Link to="/">Privacy Policy.</Link>
+              <input type="checkbox" />{" "}
+              <label>
+                {" "}
+                I accept the <Link to="/">Terms of Service</Link> and{" "}
+                <Link to="/">Privacy Policy.</Link>
+              </label>
             </div>
             <button className="dialog-btn">Create your account</button>
           </form>

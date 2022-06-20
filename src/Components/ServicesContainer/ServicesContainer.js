@@ -16,7 +16,7 @@ export default function ServicesContainer() {
           tiltMaxAngleX="7"
           tiltMaxAngleY="7"
         >
-          <div className={`servicelist ${list.class}` }>{list.icon}</div>
+          <div className={`servicelist ${list.class}`}>{list.icon}</div>
           <h3>{list.title}</h3>
           <p>{list.description}</p>
           <Link to={list.url}>Learn more &#8594;</Link>

@@ -12,6 +12,7 @@ import Footer from "./Components/Footer/Footer";
 import ScrollTop from "./Components/ScrollTop";
 import Header from "./Components/Header/Header";
 import { PaymentPage } from "./Components/PaymentPage/PaymentPage";
+import Services from "./Pages/Services/Services";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/services" element={<Services />}></Route>
           <Route path="/pricing" element={<Pricing />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route
@@ -40,10 +42,7 @@ function App() {
             path="/VirtualPrivateServer"
             element={<VirtualPrivateServer />}
           ></Route>
-          <Route
-            path="/payment"
-            element={<PaymentPage />}
-          ></Route>
+          <Route path="/payment" element={<PaymentPage />}></Route>
         </Routes>
         <Footer />
       </Router>

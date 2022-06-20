@@ -1,0 +1,23 @@
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services-container h1 {
+  font-size: 50px;
+  margin-bottom: -50px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1536px) {
+  .services-container h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-container h1 {
+    font-size: 35px;
+  }
+}
