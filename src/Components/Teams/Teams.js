@@ -6,8 +6,8 @@ export default function Teams() {
   return (
     <div className="teams-container">
       <div className="teams-heading">
-        <h1>We are a team of experts</h1>
-        <p>Let’s talk about how we can bring your ideas to life together</p>
+        <h1 className="title-main">We are a team of experts</h1>
+        <p className="desc-main">Let’s talk about how we can bring your ideas to life together</p>
       </div>
       <div className="teams-mates">
         {teamList.map((list, index) => {

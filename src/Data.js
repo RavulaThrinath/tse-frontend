@@ -62,7 +62,7 @@ export const ServicesContent = [
     title: "Business Strategy",
     description:
       "Absolute Trade Solution, Risk Mitigation Portfolio management, and Money Flow Index MFI.",
-    url: "/BusinessStrategy",
+    url: "/services/BusinessStrategy",
   },
   {
     id: 1,
@@ -71,7 +71,7 @@ export const ServicesContent = [
     title: "Consultancy Services",
     description:
       "Market Analysis Trade Plan, Portfolio Evaluation, and Artificial Intelligence Expert Advisor.",
-    url: "/ConsultancyServices",
+    url: "/services/ConsultancyServices",
   },
   {
     id: 2,
@@ -80,7 +80,7 @@ export const ServicesContent = [
     title: "License Configuration",
     description:
       "Our Advisor is a fully automated financial trading software with adjustable entry parameters.",
-    url: "/LicenseConfiguration",
+    url: "/services/LicenseConfiguration",
   },
   {
     id: 3,
@@ -89,7 +89,7 @@ export const ServicesContent = [
     title: "Virtual Private Server",
     description:
       "We offers clients the opportunity to purchase VPS to be used for the hosting of the Expert Advisor.",
-    url: "/VirtualPrivateServer",
+    url: "/services/VirtualPrivateServer",
   },
 ];
 

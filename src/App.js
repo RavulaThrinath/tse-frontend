@@ -27,19 +27,19 @@ function App() {
           <Route path="/pricing" element={<Pricing />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route
-            path="/BusinessStrategy"
+            path="/services/BusinessStrategy"
             element={<BusinessStrategy />}
           ></Route>
           <Route
-            path="/ConsultancyServices"
+            path="/services/ConsultancyServices"
             element={<ConsultancyServices />}
           ></Route>
           <Route
-            path="/LicenseConfiguration"
+            path="/services/LicenseConfiguration"
             element={<LicenseConfiguration />}
           ></Route>
           <Route
-            path="/VirtualPrivateServer"
+            path="/services/VirtualPrivateServer"
             element={<VirtualPrivateServer />}
           ></Route>
           <Route path="/payment" element={<PaymentPage />}></Route>

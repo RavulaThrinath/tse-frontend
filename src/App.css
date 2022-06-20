@@ -103,6 +103,7 @@ a {
   }
   .desc-main {
     font-size: 13px;
+    line-height: 20px;
   }
 }
 
@@ -123,9 +124,60 @@ a {
   margin-bottom: 10px;
 }
 .container-text {
-  line-height: 40px;
   opacity: 0.8;
   font-size: 26px;
+  line-height: 45px;
+}
+@media screen and (max-width: 1536px) {
+  .conatiner-wrapper {
+    padding: 80px;
+  }
+  .container-heading {
+    font: 600 40px "Commissioner", sans-serif;
+  }
+  .container-text {
+    font-size: 22px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .conatiner-wrapper {
+    padding: 70px;
+  }
+  .container-heading {
+    font: 600 35px "Commissioner", sans-serif;
+  }
+  .container-text {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .conatiner-wrapper {
+    max-width: 85%;
+    padding: 60px;
+  }
+  .container-heading {
+    font: 600 30px "Commissioner", sans-serif;
+  }
+  .container-text {
+    font-size: 17px;
+    line-height: 31px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conatiner-wrapper {
+    max-width: 95%;
+    padding: 40px;
+  }
+  .container-heading {
+    font: 600 25px "Commissioner", sans-serif;
+    margin-bottom: 0px;
+  }
+  .container-text {
+    font-size: 15px;
+    line-height: 28px;
+  }
 }
 
 .f {

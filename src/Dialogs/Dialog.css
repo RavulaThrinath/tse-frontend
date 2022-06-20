@@ -76,6 +76,7 @@
 }
 .modal-heading h1 {
   font-size: 40px;
+  margin-bottom: 5px;
 }
 .modal-heading p {
   font-size: 15px;
@@ -146,6 +147,7 @@
   padding-left: 15px;
   border: 1.5px solid #0000001e;
   transition: all 0.3s ease;
+  font-family: "Commissioner", sans-serif;
   font-weight: 600;
 }
 .su-user-details input:focus {
@@ -184,7 +186,7 @@
   align-items: center;
   gap: 5px;
   color: #5c5c5c;
-} 
+}
 .su-checkbox a {
   color: #000000;
 }
@@ -287,4 +289,24 @@
 .resend-text {
   margin: 20px 0 10px 0;
   font-size: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .auth {
+    padding: 12px 13px;
+  }
+  .auth h4 {
+    margin: 0 5px;
+  }
+  .auth img {
+    margin: 0 5px;
+  }
+  .terms-text,
+  .modal-sub-text,
+  .modal-heading p {
+    white-space: initial;
+  }
+  .modal-heading p {
+    margin-bottom: 10px;
+  }
 }
