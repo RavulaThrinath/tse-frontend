@@ -1,61 +1,11 @@
-.cs-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: url("../../Assets/Consultancy.png") no-repeat;
-  background-size: 100%;
-  background-color: #ffffff;
+.cs {
+  background: url("../../Assets/Consultancy.png") no-repeat 100%;
+  background-color: #000000b0;
+  background-blend-mode: darken;
 }
-.cs-content {
-  width: 100%;
-  max-width: 85%;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  background: #ffffff;
-  padding: 100px;
-  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.082);
-}
-.cs-content h2 {
-  font: 600 45px "Commissioner", sans-serif;
-  margin-bottom: 10px;
-}
-.cs-content p {
-  line-height: 40px;
-  opacity: 0.8;
-  font-size: 26px;
-}
-.ser-cont {
-  display: grid;
+.cs-list {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 60px;
-  margin-top: 50px;
-}
-.ser-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.ser-wrapper svg {
-  padding: 15px;
-  font-size: 65px;
-  border-radius: 10px;
-}
-.ser-wrapper h3 {
-  font: 600 25px "Commissioner", sans-serif;
-  color: #0f2137;
-  margin-bottom: 7px;
-}
-.ser-wrapper span {
-  font: 100 24px "Commissioner", sans-serif;
-  line-height: 35px;
-  color: #000000;
-  opacity: 0.7;
 }
 .con-1 svg {
   background-color: rgba(255, 67, 97, 10.12%);
@@ -80,4 +30,11 @@
 .con-6 svg {
   background-color: rgba(233, 116, 37, 12%);
   color: #e97425;
+}
+
+@media screen and (max-width: 480px) {
+  .cs-list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }

@@ -107,76 +107,218 @@ a {
   }
 }
 
-/* About and Services container css */
-
-.conatiner-wrapper {
-  position: absolute;
+.services-heading {
+  position: relative;
   width: 100%;
-  max-width: 80%;
+  height: 50vh;
+  background-size: contain;
+  color: #eaf9ff;
+}
+
+.img-heading {
+  display: inline;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
   transform: translate(-50%, -50%);
+  font: 800 60px "manrope", sans-serif;
+}
+.img-heading::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100px;
+  background: #00000020;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.services-content {
+  max-width: 85%;
+  margin: 100px auto;
   padding: 100px;
   background: #ffffff;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.082);
+  border-radius: 30px;
 }
 
-.container-heading {
-  font: 600 45px "Commissioner", sans-serif;
-  margin-bottom: 10px;
+.content-title {
+  font: 800 40px "Manrope", sans-serif;
+  margin-bottom: 15px;
 }
-.container-text {
+
+.content-text {
   opacity: 0.8;
-  font-size: 26px;
+  font: 400 25px "Commissioner", sans-serif;
   line-height: 45px;
 }
+
+.content-list {
+  display: grid;
+  gap: 60px;
+  margin-top: 80px;
+}
+.list-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.list-wrapper svg {
+  font-size: 65px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.list-title {
+  font: 600 25px "Manrope", sans-serif;
+  color: #0f2137;
+  margin-bottom: 7px;
+}
+.list-des {
+  font: 100 24px "Commissioner", sans-serif;
+  line-height: 38px;
+  color: #000000;
+  opacity: 0.7;
+}
 @media screen and (max-width: 1536px) {
-  .conatiner-wrapper {
+  .img-heading {
+    font-size: 50px;
+  }
+  .services-content {
     padding: 80px;
   }
-  .container-heading {
-    font: 600 40px "Commissioner", sans-serif;
+  .content-title {
+    font-size: 35px;
+    margin-bottom: 15px;
   }
-  .container-text {
+  .content-text {
     font-size: 22px;
     line-height: 40px;
   }
+  .content-list {
+    margin-top: 70px;
+    gap: 50px;
+  }
+  .list-wrapper svg {
+    font-size: 55px;
+    padding: 12px;
+  }
+  .list-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .list-des {
+    line-height: 32px;
+    font-size: 19px;
+  }
 }
 @media screen and (max-width: 1366px) {
-  .conatiner-wrapper {
+  .img-heading {
+    font-size: 45px;
+  }
+  .services-content {
     padding: 70px;
+    margin: 70px auto;
   }
-  .container-heading {
-    font: 600 35px "Commissioner", sans-serif;
+  .content-title {
+    font-size: 32px;
+    margin-bottom: 15px;
   }
-  .container-text {
+  .content-text {
+    font-size: 21px;
+    line-height: 38px;
+  }
+  .content-list {
+    margin-top: 60px;
+    gap: 40px 30px;
+  }
+  .list-wrapper svg {
+    font-size: 50px;
+    padding: 10px;
+  }
+  .list-title {
     font-size: 18px;
-    line-height: 35px;
+    margin-bottom: 5px;
+  }
+  .list-des {
+    line-height: 28px;
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .conatiner-wrapper {
-    max-width: 85%;
-    padding: 60px;
+  .img-heading {
+    font-size: 40px;
   }
-  .container-heading {
-    font: 600 30px "Commissioner", sans-serif;
+  .content-title {
+    font-size: 27px;
+    margin-bottom: 10px;
   }
-  .container-text {
+  .content-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .content-list {
+    margin-top: 50px;
+  }
+  .list-wrapper svg {
+    font-size: 40px;
+    padding: 7px;
+  }
+  .list-title {
     font-size: 17px;
-    line-height: 31px;
+    margin-bottom: 3px;
+  }
+  .list-des {
+    line-height: 27px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {
-  .conatiner-wrapper {
-    max-width: 95%;
-    padding: 40px;
+  .services-heading {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    background-size: contain;
+    color: #eaf9ff;
   }
-  .container-heading {
-    font: 600 25px "Commissioner", sans-serif;
-    margin-bottom: 0px;
+  .img-heading {
+    font-size: 25px;
   }
-  .container-text {
-    font-size: 15px;
-    line-height: 28px;
+  .services-content {
+    max-width: 93%;
+    margin: 50px auto;
+    padding: 40px 30px;
+  }
+  .content-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .content-text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .content-list {
+    margin-top: 50px;
+  }
+  .list-wrapper {
+    flex-direction: column;
+    gap: 7px;
+  }
+  .list-wrapper svg {
+    font-size: 40px;
+    padding: 7px;
+  }
+  .list-title {
+    font-size: 17px;
+    margin-bottom: 3px;
+  }
+  .list-des {
+    line-height: 27px;
+    font-size: 16px;
   }
 }
 

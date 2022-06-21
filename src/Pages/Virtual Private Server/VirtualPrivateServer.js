@@ -4,10 +4,13 @@ import { VpsList } from "../../Data";
 
 export default function VirtualPrivateServer() {
   return (
-    <div className="vps-container">
-      <div className="vps-content">
-        <h2>Virtual Private Server</h2>
-        <p>
+    <>
+      <div className="services-heading vps">
+        <h1 className="img-heading">Virtual Private Server</h1>
+      </div>
+      <div className="services-content">
+        <h2 className="content-title">Virtual Private Server</h2>
+        <p className="content-text">
           Trade Sense Expert Limited offers clients the opportunity to purchase
           virtual private servers to be used for the hosting of the Expert
           Advisor. The virtual proxy server enables the expert advisor access to
@@ -15,20 +18,20 @@ export default function VirtualPrivateServer() {
           Upon the setting up of the expert advisor, clients would be onboarded
           in 3 phases;
         </p>
-        <div className="vps-cont">
+        <div className="content-list vps-list">
           {VpsList.map((list, index) => {
             return (
-              <div key={index} className="vps-wrapper">
+              <div key={index} className="list-wrapper">
                 <div className={list.class}> {list.icon}</div>
                 <aside>
-                  <h3>{list.title}</h3>
-                  <span>{list.description}</span>
+                  <h3 className="list-title">{list.title}</h3>
+                  <span className="list-des">{list.description}</span>
                 </aside>
               </div>
             );
           })}
         </div>
       </div>
-    </div>
+    </>
   );
 }

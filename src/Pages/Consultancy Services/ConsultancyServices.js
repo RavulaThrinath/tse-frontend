@@ -4,10 +4,13 @@ import { ConsultancyList } from "../../Data";
 
 export default function ConsultancyServices() {
   return (
-    <div className="cs-container">
-      <div className="cs-content">
-        <h2>TSE Consultancy</h2>
-        <p>
+    <>
+      <div className="services-heading cs">
+        <h1 className="img-heading">Consultancy Services</h1>
+      </div>
+      <div className="services-content">
+        <h1 className="content-title">TSE Consultancy</h1>
+        <p className="content-text">
           Trade Sense Expert Limited offers clients the opportunity to purchase
           virtual private servers to be used for the hosting of the Expert
           Advisor. The virtual proxy server enables the expert advisor access to
@@ -15,20 +18,20 @@ export default function ConsultancyServices() {
           Upon the setting up of the expert advisor, clients would be onboarded
           in 3 phases;
         </p>
-        <div className="ser-cont">
+        <div className="content-list cs-list">
           {ConsultancyList.map((list, index) => {
             return (
-              <div key={index} className="ser-wrapper">
+              <div key={index} className="list-wrapper">
                 <div className={list.class}> {list.icon}</div>
                 <aside>
-                  <h3>{list.title}</h3>
-                  <span>{list.description}</span>
+                  <h3 className="list-title">{list.title}</h3>
+                  <span className="list-des">{list.description}</span>
                 </aside>
               </div>
             );
           })}
         </div>
       </div>
-    </div>
+    </>
   );
 }

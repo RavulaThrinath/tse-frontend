@@ -42,7 +42,7 @@ function App() {
             path="/services/VirtualPrivateServer"
             element={<VirtualPrivateServer />}
           ></Route>
-          <Route path="/payment" element={<PaymentPage />}></Route>
+          <Route path="/pricing/payment" element={<PaymentPage />}></Route>
         </Routes>
         <Footer />
       </Router>

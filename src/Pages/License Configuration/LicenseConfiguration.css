@@ -1,31 +1,31 @@
-.lc-container {
-  position: relative;
-  width: 100%;
-  height: 90vh;
-  background: url("../../Assets/License.png") no-repeat 100%;
-  background-size: 100%;
-  margin-bottom: 250px;
+.lc {
+  background: url("../../Assets/License.png") no-repeat 0%;
+  background-color: #000000b9;
+  background-blend-mode: darken;
 }
-.lc-content {
-  width: 100%;
-  max-width: 80%;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background: #ffffff;
-  padding: 50px;
-  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.082);
-  color: #000000;
+
+.lc-text {
+  margin-bottom: 15px;
 }
-/* .lc-content h2 {
-  font-family: "Commissioner", sans-serif;
-} */
-.lc-content p {
-  line-height: 30px;
-  opacity: 0.8;
-  font-size: 16px;
+.services-content a {
+  font-size: 25px;
+  color: #2a5298;
+}
+.services-content a:active {
+  color: #2a5298;
+}
+@media screen and (max-width: 1536px) {
+  .services-content a {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .services-content a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services-content a {
+    font-size: 15px;
+  }
 }

@@ -19,7 +19,6 @@
 }
 
 .faq-left {
-  display: inline;
   color: #000000;
   white-space: pre-line;
   width: 30%;
@@ -27,12 +26,13 @@
 .faq-left h1 {
   font-size: 32px;
   line-height: 48px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   opacity: 0.7;
   font-weight: 600;
 }
 
 .ayq-button {
+  display: inline;
   margin-top: 15px;
   border: none;
   background-color: #2a5298;
@@ -120,10 +120,11 @@
   .faq-left h1 {
     font-size: 22px;
     line-height: 35px;
+    margin-bottom: 30px;
   }
   .ayq-button {
     padding: 12px 22px;
-    font-size: 18px;
+    font-size: 15px;
   }
   .accordion-list {
     width: 55%;
