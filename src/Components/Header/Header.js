@@ -8,7 +8,6 @@ import Modal from "../../Dialogs/Dialog";
 import useScrollListener from "./Hook";
 import googleicon from "../../Assets/Google icon.svg";
 import appleicon from "../../Assets/Apple icon.svg";
-import { Squash as Hamburger } from "hamburger-react";
 import { navbarLinks } from "../../Data";
 
 export default function Header() {
@@ -74,7 +73,9 @@ export default function Header() {
             setIsNavExpanded(!isNavExpanded);
           }}
         >
-          <Hamburger size={20} />
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
 
         <div
