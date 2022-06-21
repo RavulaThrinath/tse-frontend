@@ -218,9 +218,12 @@ export default function Header() {
               </div>
             </div>
             <div className="su-checkbox">
-              <input type="checkbox" />I accept the
-              <Link to="/">Terms of Service</Link> and
-              <Link to="/">Privacy Policy.</Link>
+              <input type="checkbox" />
+              <label>
+                {" "}
+                I accept the <Link to="/">Terms of Service</Link> and{" "}
+                <Link to="/">Privacy Policy.</Link>
+              </label>
             </div>
             <button className="dialog-btn">Login</button>
           </form>
