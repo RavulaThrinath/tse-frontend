@@ -60,11 +60,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <h4>© 2022 HowToTrade.com. All Rights Reserved.</h4>
+        <h4>© 2022 All Rights Reserved by Trade Sense License Ltd.</h4>
         <ul>
-          <li>TermsPrivacy</li>
-          <li>Policy</li>
-          <li>Cookie Policy</li>
+          <li>Terms of Use</li>
+          <li>Privacy Policy</li>
         </ul>
       </div>
     </div>

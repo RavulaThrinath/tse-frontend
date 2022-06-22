@@ -13,6 +13,7 @@ import ScrollTop from "./Components/ScrollTop";
 import Header from "./Components/Header/Header";
 import { PaymentPage } from "./Components/PaymentPage/PaymentPage";
 import Services from "./Pages/Services/Services";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           ></Route>
           <Route path="/pricing/payment" element={<PaymentPage />}></Route>
         </Routes>
+        <ScrollToTop/>
         <Footer />
       </Router>
     </div>
