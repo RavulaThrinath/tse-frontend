@@ -13,6 +13,9 @@ nav {
   padding: 0.5rem 0rem;
   color: #000000;
 }
+.nav-close {
+  display: none;
+}
 .nav-bar--hidden {
   transform: translateY(-100%);
 }
@@ -56,20 +59,20 @@ nav {
 /* .navigation-menu li a:hover {
   opacity: 1;
 } */
-.sign {
+.sign-in,
+.sign-up {
   all: unset;
   border-radius: 50px;
   margin: 0 7px;
   cursor: pointer;
-  font-size: 22px;
 }
-.in {
+.sign-in {
   padding: 14px 24px;
   border: 1.5px solid #1e3c72;
   color: #1e3c72;
   font-weight: 600;
 }
-.up {
+.sign-up {
   padding: 14px 24px;
   color: #ffffff;
   border: 1.5px solid #1e3c72;
@@ -99,11 +102,10 @@ nav {
   .navlink {
     font-size: 19px;
   }
-  .sign {
+
+  .sign-in,
+  .sign-up {
     font-size: 18px;
-  }
-  .in,
-  .up {
     padding: 11px 21px;
   }
 }
@@ -127,11 +129,10 @@ nav {
   .navlink {
     font-size: 18px;
   }
-  .sign {
+
+  .sign-in,
+  .sign-up {
     font-size: 17px;
-  }
-  .in,
-  .up {
     padding: 10px 20px;
   }
 }
@@ -154,11 +155,9 @@ nav {
   .navlink {
     font-size: 16px;
   }
-  .sign {
+  .sign-in,
+  .sign-up {
     font-size: 15px;
-  }
-  .in,
-  .up {
     padding: 8px 18px;
   }
 }
@@ -167,6 +166,9 @@ nav {
   .hamburger {
     display: block;
   }
+  /* .nav-close {
+    display: block;
+  } */
   nav {
     display: flex;
     justify-content: space-between;
@@ -186,13 +188,14 @@ nav {
   .navigation-menu {
     position: absolute;
     gap: 0;
-    top: 80px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     background-color: #ffffff;
     display: none;
     z-index: 100;
+    border: 7px solid #1e3c7220;
   }
   .navigation-menu ul {
     flex-direction: column;
@@ -215,11 +218,23 @@ nav {
     gap: 30px;
     padding-top: 70px;
   }
+  .navigation-menu.expanded .nav-close {
+    display: block;
+  }
+
+  .sign-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /* hamburger  */
 
-.hamburger {
+.hamburger,
+.nav-close {
   width: 25px;
   height: auto;
   margin-bottom: 13px;
@@ -235,7 +250,8 @@ nav {
   cursor: pointer;
 }
 
-.hamburger span {
+.hamburger span,
+.nav-close span {
   display: block;
   position: absolute;
   height: 2px;
@@ -254,15 +270,18 @@ nav {
   transition: 0.25s ease-in-out;
 }
 
-.hamburger span:nth-child(1) {
+.hamburger span:nth-child(1),
+.nav-close span:nth-child(1) {
   top: 0px;
 }
 
-.hamburger span:nth-child(2) {
+.hamburger span:nth-child(2),
+.nav-close span:nth-child(2) {
   top: 8px;
 }
 
-.hamburger span:nth-child(3) {
+.hamburger span:nth-child(3),
+.nav-close span:nth-child(3) {
   top: 16px;
 }
 
@@ -280,6 +299,56 @@ nav {
 }
 
 .hamburger.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.nav-close {
+  position: absolute;
+  top: 17px;
+  left: 87%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+/* close button  */
+
+.nav-close span {
+  display: block;
+  height: 2px;
+  width: 25px;
+  background: #1e3c72;
+  border-radius: 9px;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.nav-close span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.nav-close span:nth-child(2) {
   top: 18px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);

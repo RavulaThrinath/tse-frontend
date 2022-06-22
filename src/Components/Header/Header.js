@@ -70,7 +70,7 @@ export default function Header() {
         <div
           className="hamburger"
           onClick={() => {
-            setIsNavExpanded(!isNavExpanded);
+            setIsNavExpanded(true);
           }}
         >
           <span></span>
@@ -83,6 +83,15 @@ export default function Header() {
             isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
           }
         >
+          <div
+            className="nav-close"
+            onClick={() => {
+              setIsNavExpanded(false);
+            }}
+          >
+            <span></span>
+            <span></span>
+          </div>
           <ul>
             {navbarLinks.map((list, index) => (
               <li key={index}>
@@ -91,7 +100,7 @@ export default function Header() {
                   activeclassname="active"
                   to={list.url}
                   onClick={() => {
-                    setIsNavExpanded(!isNavExpanded);
+                    setIsNavExpanded(false);
                   }}
                 >
                   {list.title}
@@ -99,11 +108,11 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <div className="sign">
-            <button onClick={() => setShowSignIn(true)} className="sign in">
+          <div className="sign-btns">
+            <button onClick={() => setShowSignIn(true)} className="sign-in">
               Sign in
             </button>
-            <button onClick={() => setShowSignUp(true)} className="sign up">
+            <button onClick={() => setShowSignUp(true)} className="sign-up">
               Sign up
             </button>
           </div>
