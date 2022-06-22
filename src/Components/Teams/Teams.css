@@ -1,6 +1,6 @@
 .teams-container {
   max-width: 80%;
-  margin: 400px auto 150px auto;
+  margin: 0 auto 150px auto;
 }
 .teams-heading {
   text-align: center;
@@ -53,8 +53,8 @@
 }
 @media screen and (max-width: 1280px) {
   .teams-container {
-  margin: 300px auto 150px auto;
-}
+    margin: 0px auto 150px auto;
+  }
   .teams-heading {
     margin-bottom: 50px;
   }

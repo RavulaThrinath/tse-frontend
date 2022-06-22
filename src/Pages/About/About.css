@@ -1,9 +1,7 @@
-.about-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+.about-img {
   background: url(../../Assets/Aboutpage.jpg) no-repeat 50% 50%;
-  background-size: 100%;
+  background-color: #000000b0;
+  background-blend-mode: darken;
 }
 .conatiner-wrapper {
   top: 100%;
@@ -12,13 +10,9 @@
   flex-direction: column;
   gap: 20px;
 }
-@media screen and (max-width: 480px) {
-  .about-container {
-    background: url(../../Assets/Aboutpage.jpg) no-repeat 100%;
-    background-size: contain;
-    background-position-y: 0;
-  }
-}
 
+.who-we-are {
+  margin-bottom: 20px;
+}
 /* Soothsayer has helped dozens fo Fortune 1000 & Midsize companies capture ROI via custom A.I. solutions */
 /* 00b4d8 */
