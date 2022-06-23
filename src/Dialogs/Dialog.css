@@ -148,7 +148,7 @@
   border: 1.5px solid #0000001e;
   transition: all 0.3s ease;
   font-family: "Commissioner", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 .su-user-details input:focus {
   border: 1.5px solid #1e3c72;

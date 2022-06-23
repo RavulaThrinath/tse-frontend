@@ -1,6 +1,15 @@
-import { FaBeer } from "react-icons/fa";
-import { BsCurrencyDollar, BsFlag, BsServer } from "react-icons/bs";
+import {
+  BsCurrencyDollar,
+  BsFlag,
+  BsServer,
+  BsBriefcase,
+} from "react-icons/bs";
 import { RiArticleLine } from "react-icons/ri";
+import { BiCrown, BiLockOpen, BiLock } from "react-icons/bi";
+import { TbDeviceAnalytics } from "react-icons/tb";
+import { IoServerOutline } from "react-icons/io5";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { MdOutlinePhonelinkSetup } from "react-icons/md";
 
 export const navbarLinks = [
   {
@@ -302,42 +311,42 @@ export const teamList = [
 
 export const ConsultancyList = [
   {
-    icon: <FaBeer />,
+    icon: <TbDeviceAnalytics />,
     title: "Market Analysis Trade Plan",
     description:
       "Get your blood tests delivered at let home collect sample from the victory of the managments.",
     class: "con-1",
   },
   {
-    icon: <FaBeer />,
+    icon: <BsBriefcase />,
     title: "Portfolio Risk Management",
     description:
       "Get your blood tests delivered at let home collect sample from the victory of the managments.",
     class: "con-2",
   },
   {
-    icon: <FaBeer />,
+    icon: <BsBriefcase />,
     title: "Portfolio Risk Management",
     description:
       "Get your blood tests delivered at let home collect sample from the victory of the managments.",
     class: "con-3",
   },
   {
-    icon: <FaBeer />,
+    icon: <GiArtificialIntelligence />,
     title: "AI Expert Advisor",
     description:
       "Get your blood tests delivered at let home collect sample from the victory of the managments.",
     class: "con-4",
   },
   {
-    icon: <FaBeer />,
+    icon: <MdOutlinePhonelinkSetup />,
     title: "Trading apps and Setup",
     description:
       "Get your blood tests delivered at let home collect sample from the victory of the managments.",
     class: "con-5",
   },
   {
-    icon: <FaBeer />,
+    icon: <IoServerOutline />,
     title: "Virtual Proxy Server",
     description:
       "Get your blood tests delivered at let home collect sample from the victory of the managments.",
@@ -347,25 +356,25 @@ export const ConsultancyList = [
 
 export const VpsList = [
   {
-    icon: <FaBeer />,
+    icon: <BiLockOpen />,
     title: "Free Tier",
     description:
       "Trade Sense Expert Limited offers clients the opportunity to purchase virtual private servers to be used for the hosting of the Expert Advisor. The virtual proxy server enables the expert advisor access to constant internet and power supply for continuous position engagement. Upon the setting up of the expert advisor, clients would be onboarded in 3 phases;",
-    class: "con-1",
+    class: "cont-1",
   },
   {
-    icon: <FaBeer />,
+    icon: <BiLock />,
     title: "Classic Tier",
     description:
       "Classic Tier offers 3 months virtual proxy hosting and server management of the expert advisor. Classic tier attracts monthly $15 virtual proxy hosting and $50 for Server Management services. The server management entails market analysis in relation to the expert advisor’s open positions, risk mitigation and portfolio management RMPM, account status report and expert recommendations in relation to the account status report.",
-    class: "con-2",
+    class: "cont-2",
   },
   {
-    icon: <FaBeer />,
+    icon: <BiCrown />,
     title: "Premium Tier",
     description:
       "Clients can decide to migrate to Premium Tier. The plan offers 6 to 12 months of virtual proxy hosting and server management of the expert advisor. Premium Tier attracts monthly $15 virtual proxy hosting and $50 for Server Management services. 10% discount applies to 6 months subscription and 20% discount for 12months subscription. The server management entails market analysis in relation to the expert advisor’s open positions, risk mitigation and portfolio management RMPM, account status report and expert recommendations in relation to the account status report.",
-    class: "con-3",
+    class: "cont-3",
   },
 ];
 

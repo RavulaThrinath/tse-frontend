@@ -7,7 +7,7 @@ import PaypalLogo from "../../Assets/Paypal logo.svg";
 export const PaymentPage = () => {
   return (
     <div className="payment-container">
-      <h1 className="payment-heading">Payment Setup</h1>
+      <h1 className="payment-heading">Payment Details</h1>
       <div className="payment-content">
         <div className="payment-img">
           <img src={PaymentImage} alt="" />

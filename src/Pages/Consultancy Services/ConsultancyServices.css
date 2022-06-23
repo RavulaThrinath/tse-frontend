@@ -21,7 +21,7 @@
 }
 .con-4 svg {
   background-color: #e4ffee;
-  color: #40975f;
+  color: #40975f !important;
 }
 .con-5 svg {
   background-color: #f4f4ff;
