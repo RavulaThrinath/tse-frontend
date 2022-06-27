@@ -1,0 +1,21 @@
+.top-container {
+  position: fixed;
+  left: 95%;
+  bottom: 35px;
+  z-index: 1;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 10px #ffffff30);
+}
+
+.topImage {
+  width: 30px;
+}
+@media (max-width: 480px) {
+  .top-container {
+    left: 90%;
+    bottom: 15px;
+  }
+  .topImage {
+    width: 20px;
+  }
+}

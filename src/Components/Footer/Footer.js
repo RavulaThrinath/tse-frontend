@@ -7,7 +7,7 @@ import {
   FaTwitter,
   FaFacebookF,
 } from "react-icons/fa";
-import { footerLinks1, footerLinks2, footerLinks3 } from "../../Data";
+import { footerLinks1, footerLinks2 } from "../../Data";
 
 export default function Footer() {
   return (
@@ -40,16 +40,6 @@ export default function Footer() {
           <div className="links-container">
             <h1 className="links-title">Information</h1>
             {footerLinks2.map((list, index) => {
-              return (
-                <a key={index} href="./" alt="" className="links-list">
-                  {list.name}
-                </a>
-              );
-            })}
-          </div>
-          <div className="links-container">
-            <h1 className="links-title">Our Policy</h1>
-            {footerLinks3.map((list, index) => {
               return (
                 <a key={index} href="./" alt="" className="links-list">
                   {list.name}

@@ -104,25 +104,21 @@ export const ServicesContent = [
 
 export const numbersList = [
   {
-    id: 0,
     count: "8K+",
     description: `We have more than \n customers`,
     class: "first",
   },
   {
-    id: 1,
     count: "100+",
     description: `Free online tutorials \n videos avaialble`,
     class: "second",
   },
   {
-    id: 2,
     count: "90+",
     description: `Daily updated blog \n post maintain`,
     class: "third",
   },
   {
-    id: 3,
     count: "3M",
     description: `Job posted everydays \n with qualification`,
     class: "fourth",
@@ -197,29 +193,6 @@ export const footerLinks2 = [
   },
   {
     name: "Store Hours",
-    href: "./",
-  },
-];
-
-export const footerLinks3 = [
-  {
-    name: "Application security",
-    href: "./",
-  },
-  {
-    name: "Support Center",
-    href: "./",
-  },
-  {
-    name: "Software principles",
-    href: "./",
-  },
-  {
-    name: "Unwanted software policy",
-    href: "./",
-  },
-  {
-    name: "Responsible supply chain",
     href: "./",
   },
 ];

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaArrowCircleUp } from "react-icons/fa";
-import { Button } from "./Style";
+import "./ScrollToTop.css";
+import topIcon from "../../Assets/Vector.svg";
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
@@ -24,15 +24,15 @@ const ScrollToTop = () => {
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <Button>
-      <FaArrowCircleUp
-        onClick={scrollToTop}
-        style={{
-          display: visible ? "inline" : "none",
-          color: "#ffffff",
-        }}
-      />
-    </Button>
+    <div
+      className="top-container"
+      onClick={scrollToTop}
+      style={{
+        display: visible ? "inline" : "none",
+      }}
+    >
+      <img src={topIcon} className="topImage" alt="" />
+    </div>
   );
 };
 

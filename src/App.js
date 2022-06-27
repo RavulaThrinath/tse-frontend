@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import "./App.css";
 import Home from "./Pages/Home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -14,8 +15,16 @@ import Header from "./Components/Header/Header";
 import { PaymentPage } from "./Components/PaymentPage/PaymentPage";
 import Services from "./Pages/Services/Services";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="App">
       <Router>
@@ -45,7 +54,7 @@ function App() {
           ></Route>
           <Route path="/pricing/payment" element={<PaymentPage />}></Route>
         </Routes>
-        <ScrollToTop/>
+        <ScrollToTop />
         <Footer />
       </Router>
     </div>

@@ -7,14 +7,18 @@ export default function Numbers() {
   return (
     <div className="numbers-container">
       <div className="left-container">
-        {numbersList.map((list) => (
-          <div key={list.id} className="numbers-list">
+        {numbersList.map((list, Index) => (
+          <div key={Index} data-aos="zoom-in" className="numbers-list">
             <span className={`num-count ${list.class}`}>{list.count}</span>
             <p>{list.description}</p>
           </div>
         ))}
       </div>
-      <div className="right-container">
+      <div
+        className="right-container"
+        data-aos="fade-left"
+        data-aos-delay="500"
+      >
         <h3>{`Numbers speak \n louder than words`}</h3>
         <p>
           {`Here at Trade Sense expert, we mean business. \n Refer as many people as you can and earn 10% \n recurring commission on all their subscriptions.`}
