@@ -11,12 +11,13 @@ export default function ConsultancyServices() {
       <div className="services-content">
         <h1 className="content-title">TSE Consultancy</h1>
         <p className="content-text">
-          Trade Sense Expert Limited offers clients the opportunity to purchase
-          virtual private servers to be used for the hosting of the Expert
-          Advisor. The virtual proxy server enables the expert advisor access to
-          constant internet and power supply for continuous position engagement.
-          Upon the setting up of the expert advisor, clients would be onboarded
-          in 3 phases;
+          Trade Sense Expert is the foremost trading consultancy company. Trade
+          Sense Expert offers robust consultancy services (as seen on the
+          company’s website http://tradesenseexpert.com) .We work with clients
+          who seek to maximize trading opportunities, desire to have a
+          profitable experience, traders who seek to understand and take
+          advantage of trading solutions and want to monetize it. Our
+          Consultancy services cuts across helping clients with:
         </p>
         <div className="content-list cs-list">
           {ConsultancyList.map((list, index) => {
@@ -25,7 +26,8 @@ export default function ConsultancyServices() {
                 <div className={list.class}> {list.icon}</div>
                 <aside>
                   <h3 className="list-title">{list.title}</h3>
-                  <span className="list-des">{list.description}</span>
+                  <p className="list-des1">{list.deslist}</p>
+                  <p className="list-des">{list.description}</p>
                 </aside>
               </div>
             );

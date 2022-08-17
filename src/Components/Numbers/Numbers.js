@@ -1,7 +1,7 @@
 import React from "react";
 import "./Numbers.css";
 import { numbersList } from "../../Data";
-import numbersTick from "../../Assets/Numbers Tick.svg";
+// import numbersTick from "../../Assets/Numbers Tick.svg";
 
 export default function Numbers() {
   return (
@@ -14,7 +14,7 @@ export default function Numbers() {
           </div>
         ))}
       </div>
-      <div
+      {/* <div
         className="right-container"
         data-aos="fade-left"
         data-aos-delay="500"
@@ -34,7 +34,7 @@ export default function Numbers() {
           </li>
         </ul>
         <a href="./">Explore Details &#8594;</a>
-      </div>
+      </div> */}
     </div>
   );
 }

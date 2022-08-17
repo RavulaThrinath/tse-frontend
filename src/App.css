@@ -180,9 +180,18 @@ a {
 }
 .list-des {
   font: 100 24px "Commissioner", sans-serif;
+  white-space: pre-line;
   line-height: 38px;
   color: #000000;
   opacity: 0.7;
+}
+.list-des1 {
+  font: 100 24px "Commissioner", sans-serif;
+  white-space: pre-line;
+  /* line-height: 38px; */
+  color: #000000;
+  opacity: 0.7;
+  margin-left: 10px;
 }
 @media screen and (max-width: 1536px) {
   .img-heading {
@@ -214,6 +223,11 @@ a {
   .list-des {
     line-height: 32px;
     font-size: 19px;
+  }
+  .list-des1 {
+    line-height: 15px;
+    font-size: 19px;
+    margin-top: 5px;
   }
 }
 @media screen and (max-width: 1366px) {
@@ -248,6 +262,10 @@ a {
     line-height: 28px;
     font-size: 17px;
   }
+  .list-des1 {
+    /* line-height: 28px; */
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 1280px) {
   .img-heading {
@@ -274,6 +292,10 @@ a {
   }
   .list-des {
     line-height: 27px;
+    font-size: 16px;
+  }
+  .list-des1 {
+    /* line-height: 27px; */
     font-size: 16px;
   }
 }
@@ -318,6 +340,10 @@ a {
   }
   .list-des {
     line-height: 27px;
+    font-size: 16px;
+  }
+  .list-des1 {
+    line-height: 20px;
     font-size: 16px;
   }
 }

@@ -12,20 +12,32 @@ export default function Mentors() {
           Our team of trading <br /> mentors is there for you
         </div>
         <p>
-          {`Experienced traders by your side. Leverage the 55+ \n  years  of their experience and finally crack the markets.`}
+          {`Our Team of Consultants is there for you to provide \n solution for seamless, profitable and financial growth \n at your finger tips. Leverage on the years of trading \n experience and finally crack the market with ease.`}
         </p>
         <div className="tick-points">
           <div className="ponints-list">
             <img src={truetick} alt="" />
-            <p>Chat 24/7 with our pro mentors</p>
+            <p>24/7 customer support</p>
           </div>
           <div className="ponints-list">
             <img src={truetick} alt="" />
-            <p>Experienced in the main financial markets</p>
+            <p>Intelligent Market Analysis and round the clock trading</p>
           </div>
           <div className="ponints-list">
             <img src={truetick} alt="" />
-            <p>Every question will be answered</p>
+            <p>AI License configuration and proxy hosting</p>
+          </div>
+          <div className="ponints-list">
+            <img src={truetick} alt="" />
+            <p>Risk Analysis and Portfolio evaluation</p>
+          </div>
+          <div className="ponints-list">
+            <img src={truetick} alt="" />
+            <p>Economic reviews and Market updates</p>
+          </div>
+          <div className="ponints-list">
+            <img src={truetick} alt="" />
+            <p>Other consultancy services</p>
           </div>
         </div>
         <button className="mentors-btn">Get Started</button>

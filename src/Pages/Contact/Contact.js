@@ -1,8 +1,8 @@
 import React from "react";
 import "./Contact.css";
-import { ImLocation2 } from "react-icons/im";
-import { FaEnvelope } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { MdAccessTimeFilled } from "react-icons/md";
+import { FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -18,16 +18,16 @@ export default function Contact() {
             </div>
             <div className="icons">
               <MdAccessTimeFilled />
-              <a href="tel:13616603451">Mon-Fri: 10:00-18:00 </a>
+              <a href="tel:13616603451">Mon-Fri: 8:00-16:00 (GMT) </a>
             </div>
             <div className="icons">
-              <ImLocation2 />
+              <IoLogoWhatsapp />
               <a
-                href="https://goo.gl/maps/9uxGwF74YU74eth68"
+                href="https://api.whatsapp.com/send?phone=+44-7404649268&text=Hello!"
                 rel="noreferrer"
                 target="_blank"
               >
-                {`7218 Wren Cir Texas City, \n Texas(TX), 77591`}
+                +44 7404649268
               </a>
             </div>
           </div>

@@ -7,7 +7,7 @@ import Mentors from "../../Components/Mentors/Mentors";
 import Steps from "../../Components/Steps/Steps";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import Faq from "../../Components/FAQs/Faq";
-import Plans from "../../Components/Plans/Plans";
+// import Plans from "../../Components/Plans/Plans";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Numbers />
       <Mentors />
       <Steps />
-      <Plans />
+      {/* <Plans /> */}
       <Testimonials />
       <Faq />
     </>

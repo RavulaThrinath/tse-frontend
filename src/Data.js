@@ -9,7 +9,7 @@ import { BiCrown, BiLockOpen, BiLock } from "react-icons/bi";
 import { TbDeviceAnalytics } from "react-icons/tb";
 import { IoServerOutline } from "react-icons/io5";
 import { GiArtificialIntelligence } from "react-icons/gi";
-import { MdOutlinePhonelinkSetup } from "react-icons/md";
+// import { MdOutlinePhonelinkSetup } from "react-icons/md";
 
 export const navbarLinks = [
   {
@@ -25,8 +25,8 @@ export const navbarLinks = [
     url: "/services",
   },
   {
-    title: "Pricing",
-    url: "/pricing",
+    title: "Advisory Guide",
+    url: "/advisoryguide",
   },
   {
     title: "Contact",
@@ -36,28 +36,35 @@ export const navbarLinks = [
 export const landingContent = [
   {
     maintext: `Absoulte \n Trade Solution`,
-    subtext: `Round the clock trading & intelligent analysis to \n ensure continous growth of your investments.`,
+    subtext: `We provide the seamless trading solution for busy traders, Investors. Our trading solution makes trading work every time, everywhere.`,
     primaryBtn: "Get Started",
     secondaryBtn: "Watch Video",
     rightImage: "Landing 1",
   },
   {
-    maintext: `The impossible \n and unthinkable.`,
-    subtext: `Round the clock trading & intelligent analysis to \n ensure continous growth of your investments.`,
+    maintext: `Round the Clock \n Trading and \n Intelligent Market \n Analysis`,
+    subtext: `There’s one for all, the hard work in trading comes in the preparation. The actual process of trading, however, should be possibly effortless and unimaginable.`,
     primaryBtn: "Get Started",
     secondaryBtn: "Watch Video",
     rightImage: "Landing 2",
   },
   {
-    maintext: `Endless \n Opportunities`,
-    subtext: `Round the clock trading & intelligent analysis to \n ensure continous growth of your investments.`,
+    maintext: `Risk Mitigation \n Portfolio \n Management`,
+    subtext: `Trading opportunities are like buses, do ensure you onboard the one going the right route. Success in trading requires an apt solution to meet market demands. The endless opportunity with the right solution.`,
     primaryBtn: "Get Started",
     secondaryBtn: "Watch Video",
     rightImage: "Landing 3",
   },
   {
-    maintext: `A brand \n new horizon`,
-    subtext: `Round the clock trading & intelligent analysis to \n ensure continous growth of your investments.`,
+    maintext: `TSE- Private \n Partner of Choice.`,
+    subtext: `Our core business strategy is a happy trader, we go the extra mile to amplify your trading experience.`,
+    primaryBtn: "Get Started",
+    secondaryBtn: "Watch Video",
+    rightImage: "Landing 4",
+  },
+  {
+    maintext: `Successful \n Traders \n Community.`,
+    subtext: `Profitable trading could be for everyone but horizons belong to those who have infinite imagination, those who would not wait for it to come but would embrace the seamless solutions trade sense expert provides..`,
     primaryBtn: "Get Started",
     secondaryBtn: "Watch Video",
     rightImage: "Landing 4",
@@ -151,32 +158,17 @@ export const stepsList = [
   },
 ];
 
-export const footerLinks1 = [
-  {
-    name: "Support Center",
-    href: "./",
-  },
+export const footerLinks2 = [
   {
     name: "Customer Support",
     href: "./",
   },
   {
     name: "About Us",
-    href: "./",
-  },
-  {
-    name: "Copyright",
-    href: "./",
+    href: "/about",
   },
   {
     name: "Popular Campaign",
-    href: "./",
-  },
-];
-
-export const footerLinks2 = [
-  {
-    name: "Return Policy",
     href: "./",
   },
   {
@@ -185,82 +177,68 @@ export const footerLinks2 = [
   },
   {
     name: "Terms & Conditions",
-    href: "./",
-  },
-  {
-    name: "Site Map",
-    href: "./",
-  },
-  {
-    name: "Store Hours",
-    href: "./",
+    href: "/advisoryguide",
   },
 ];
 
 export const accordionContent = [
   {
-    question: "How does Forex compare to other Markets?",
-    answer:
-      "Unlike stocks, futures, or options, currency trading does not take place on a regulated exchange, and it is not controlled by any central governing body. There are no clearing houses to guarantee trades, and there is no arbitration panel to adjudicate disputes. All members trade with each other based on credit agreements. Essentially, business in the largest, most liquid market in the world depends on nothing more than a metaphorical handshake.",
+    question: "Who are we?",
+    answer1:
+      "Trade Sense Expert is a Consultancy Firm that majors in Financial Trading, we help Client Optimize trading opportunities. We are not a brokerage firm but we help clients annex profitable opportunities off the financial market. We are traders delight as we proffer trading solutions which help traders have an apt trading experience.",
   },
   {
-    question: "What is the Forex Commission?",
-    answer:
+    question: "What do we do?",
+    answer1:
       "Investors who trade stocks, futures, or options typically use a broker who acts as an agent in the transaction. The broker takes the order to an exchange and attempts to execute it per the customer's instructions. The broker is paid a commission when the customer buys and sells the tradable instrument for providing this service.",
   },
   {
-    question: "What is a Pip?",
-    answer:
-      "Pip stands for percentage in point and is the smallest increment of trade in FX. In the FX market, prices are quoted to the fourth decimal point. For example, if a bar of soap in the drugstore was priced at $1.20, in the FX market the same bar of soap would be quoted at 1.2000. The change in that fourth decimal point is called 1 pip and is typically equal to 1/100th of 1%.",
+    question: "How can I come on board?",
+    answer1:
+      "Our Onboarding process is seamless, you could want to speak to a consultant as to coming on board.",
   },
   {
-    question: "What are you really Trading?",
-    answer:
-      "FX traders hope to profit from changes in exchange rates between currency pairs. For dollar-denominated accounts, all profits or losses are calculated in dollars and recorded as such on the trader's account",
+    question: "What are the main advantages to being on board?",
+    answer1: "Our Risk Mitigation and Account Management offers clients.",
+    answer2: "Our expert advisors can give a guaranteed 75% ROI in 3 Months.",
+    answer3: "Our Virtual Web Servers can host servers as large as 5MB.",
+    answer4: "Trainings are advised solely based on client’s needs.",
+    answer5: "There’s a training/eBook for every trader.",
   },
   {
-    question: "What is a Currency Carry Trade?",
-    answer:
-      "Carry is the most popular trade in the currency market, practiced by both the largest hedge funds and the smallest retail speculators. The carry trade is based on the fact that every currency in the world has an associated interest. These short-term interest rates are set by the central banks of these countries: the Federal Reserve in the United States, the Bank of Japan in Japan, and the Bank of England in the United Kingdom.",
+    question: "How certain is it to make money off the financial market?",
+    answer1:
+      "There’s a solution for everyone just to ensure everyone smiles off the market",
+    answer2: "Our Expert Advisors are tested and trusted.",
+    answer3:
+      "Our awareness of market liquidity gives us that edge to either take and wait for opportunities as they present themselves.",
   },
 ];
 
 export const testimonialsContent = [
   {
-    title: "malachy Onah ",
-    place: "Nigeria",
+    title: "Kenneth O",
+    place: "Port Harcourt, Nigeria",
     img: "Test 1",
-    text: "I’ve been waiting for this service for such a long time! I’ve been following your signals for a few months already and they are fantastic, but it wasn’t that easy to copy them and kept missing too many of them. I’ve never seen such a professional service! Subscribing to your premium account was one of the best decisions I’ve made…",
+    text: "I gave up on forex trading case as my Instinct was right many times and my emotions failed me. Your expert advisor solution had helped me massively. Thank you Trade Sense Expert. I am a happy Trader now.",
   },
   {
-    title: "Frank Karlini ",
-    place: "Canada",
+    title: "Tolulope A",
+    place: "Lagos, Nigeria",
     img: "Test 2",
-    text: "Your service is amazing! By getting the signals directly to my email in real time, I almost never miss a trade. Before I had your premium service, I also had some nice profits each month, but with the premium account, my profits just doubled! I just made last Thank you FX Market Leaders team, keep up the good work.",
+    text: "Your forex trading solution is top notch, the market signals I get every now and then sent to me are spot on, trust me I never miss those rewarding opportunities not for anything. I am fine with your classic tier subscription, I find it of great value and I promise I would keep telling others about you.",
   },
   {
-    title: "Genna Frester ",
-    place: "Germany",
+    title: "Oluwasheyi G",
+    place: "Ibadan, Oyo",
     img: "Test 3",
-    text: "Well since the day I have been checking and copying your signals I found it 90% profitable, because  of the time difference I follow your signals only 4 hours a day buts its more than enough Thank you fx market leaders, you really proved yourself the market leaders or I would say for me fx market champions.",
+    text: "Amongst the many of your services I enjoy, I find it so exciting how you are able to break down fundamental analysis, I am able to key into your market analysis to take good positions. You have really proved yourself to have the solution to trading forex.",
   },
   {
-    title: "Jed Molloy ",
-    place: "Australia",
+    title: "Abel O",
+    place: "Kaduna, Nigeria",
     img: "Test 4",
-    text: "It’s been fantastic. I’ve been using it blindly on a demo account for the past few days and so far it has had a 100% success rate. The take profits seems really high at times. But so far I highly recommend this useful tool. But the hit rate is much higher than my expectations",
-  },
-  {
-    title: "Adam Thompson",
-    place: "London",
-    img: "Test 5",
-    text: "Your service is amazing! By getting the signals directly to my email in real time, I almost never miss a trade. Before I had your premium service, I also had some nice profits each month, but with the premium account, my profits just doubled! I just made last Thank you FX Market Leaders team, keep up the good work.",
-  },
-  {
-    title: "Krishna Kumar ",
-    place: "India",
-    img: "Test 6",
-    text: "Well since the day I have been checking and copying your signals I found it 90% profitable, because  of the time difference I follow your signals only 4 hours a day buts its more than enough Thank you fx market leaders, you really proved yourself the market leaders or I would say for me fx market champions.",
+    text: "I would make time before the end of this year to come for a physical visit. I am keen on doing expansion business with you and having you have a physical outlet here up North. Thank you trade sense I know better and as you'd say a knowledgeable trader is a successful one.",
   },
 ];
 
@@ -285,45 +263,65 @@ export const teamList = [
 export const ConsultancyList = [
   {
     icon: <TbDeviceAnalytics />,
-    title: "Market Analysis Trade Plan",
-    description:
-      "Get your blood tests delivered at let home collect sample from the victory of the managments.",
+    title: "Financial Market Trade Plan.",
+    description: " ",
+    deslist: `  Do you seek to have a systematic approach to reaching your trading target? \n
+      Do you seek to know what instruments to consider and a feasible target reach based on your capital? \n
+      Do you seek to know how best to manage your trading capital? \n
+      Do you seek to understand what trading metrics to use to maximize profit and minimize losses? \n
+      These questions and many more are why we are best fit for you.`,
     class: "con-1",
   },
   {
     icon: <BsBriefcase />,
-    title: "Portfolio Risk Management",
+    title: "Risk Mitigation Portfolio Management.",
     description:
-      "Get your blood tests delivered at let home collect sample from the victory of the managments.",
+      "Trade sense expert Limited is a company which amongst numerous trading solutions it provides majors its competence and signature on risk mitigation and portfolio management RMPM. We give clients trading options across all facets that leaves them satisfied, we provide expert advisors that give clients an absolute edge to making good trade profits.",
     class: "con-2",
   },
   {
     icon: <BsBriefcase />,
-    title: "Portfolio Risk Management",
+    title: "Portfolio Evaluation.",
     description:
-      "Get your blood tests delivered at let home collect sample from the victory of the managments.",
+      "The ultimate objective of any investor, trader or manager is to speculate, to generate profits on a consistent basis. The adage 'don't put all your eggs in one basket' hinges on the fact that if you drop that one basket, all your eggs will be smashed. On the other hand, if you were carrying four baskets - you’d still have three left if you’d dropped one. Portfolio Evaluation is paramount for every successful trader, there are hundreds of instruments to trade but have you considered why, what, how and when best to take trades. These and many more are why we are here for you.",
     class: "con-3",
   },
   {
     icon: <GiArtificialIntelligence />,
-    title: "AI Expert Advisor",
+    title: "Artificial Intelligence Expert Advisor (AIEA).",
     description:
-      "Get your blood tests delivered at let home collect sample from the victory of the managments.",
+      "The Financial market is open 24 hours a day, Monday through Friday. It is clearly impossible for humans to constantly work around these, but machines can trade for days without breaks not showing any sign of fatigue. Trade Sense Expert Advisors are programmed to automatically generate trading signals, identify market trends and alert you to trading opportunities. Just like other automated software, they reduce the likelihood of making emotional and irrational trading decisions. ",
     class: "con-4",
-  },
-  {
-    icon: <MdOutlinePhonelinkSetup />,
-    title: "Trading apps and Setup",
-    description:
-      "Get your blood tests delivered at let home collect sample from the victory of the managments.",
-    class: "con-5",
   },
   {
     icon: <IoServerOutline />,
     title: "Virtual Proxy Server",
     description:
-      "Get your blood tests delivered at let home collect sample from the victory of the managments.",
-    class: "con-6",
+      "Clients have access to our numerous trading solutions and one of the most sought-after solutions is acquisition of virtual proxy servers to be used for the hosting of a trading Expert Advisor. The virtual proxy server enables the expert advisor access to constant internet and power supply for continuous position engagement.",
+    class: "con-5",
+  },
+];
+export const BusinessList = [
+  {
+    icon: <TbDeviceAnalytics />,
+    title: "Absolute Trade Solution (Webinar)",
+    description:
+      "The financial market is a transparent one. Traders make just as much as they know off the financial market, many at times what you know just determines the solution you seek, how to align yourself for the solution to meet your financial goals and most of all help you make smart trading decisions. This trade Solution Webinar is FREE.",
+    class: "con-1",
+  },
+  {
+    icon: <BsBriefcase />,
+    title: "Risk Mitigation Portfolio Management",
+    description:
+      "Trade sense expert Limited is a company which amongst numerous trading solutions it provides majors its competence and signature on risk mitigation and portfolio management RMPM. We give clients trading options across all facets that leaves them satisfied, we provide expert advisors that give clients an absolute edge to making good trade profits.",
+    class: "con-2",
+  },
+  {
+    icon: <BsBriefcase />,
+    title: "Financial Market Trainings",
+    description:
+      "The financial Market is a transparent one, at Trade Sense expert we equip clients with the absolute knowledge of the market as much as they want to know, when they want to know it and how it could aid their trading decisions. Our training cut across using happenings, events, reports, news to make smart trading decisions. The knowledge does not stop at training alone, we provide support that also helps you identify the core instruments that are best considered at every point in time. We offer      different training courses.",
+    class: "con-3",
   },
 ];
 

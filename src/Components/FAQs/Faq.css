@@ -64,6 +64,7 @@
   opacity: 0.9;
 }
 .accordion-answer {
+  width: 100%;
   font: 500 22px "Manrope" !important ;
   line-height: 39px !important;
   opacity: 0.7;
@@ -77,6 +78,11 @@
 }
 .MuiSvgIcon-root {
   font-size: 35px !important;
+}
+.faqs-list {
+  list-style: none;
+  list-style-position: outside;
+  /* margin-left: 20px; */
 }
 
 @media screen and (max-width: 1536px) {
