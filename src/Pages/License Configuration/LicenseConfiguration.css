@@ -29,10 +29,10 @@
     font-size: 15px;
   }
 }
-.gs-btn {
+.gss-btn {
   all: unset;
   color: #2a5298;
 }
-.gs-btn:hover {
+.gss-btn:hover {
   text-decoration: underline;
 }

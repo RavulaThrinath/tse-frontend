@@ -66,7 +66,7 @@ export default function LicenseConfiguration() {
           with adjustable entry parameters and strict use of stop loss on every
           trade with sufficient risk management, slippage control algorithm for
           consistent growth of your investment capital.{" "}
-          <button className="gs-btn" onClick={() => setShowSignUp(true)}>
+          <button className="gss-btn" onClick={() => setShowSignUp(true)}>
             Get started
           </button>{" "}
           to maximize profits on your trading capital.
