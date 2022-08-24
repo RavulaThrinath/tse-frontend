@@ -84,6 +84,17 @@
   list-style-position: outside;
   /* margin-left: 20px; */
 }
+.answer-list {
+  width: 100%;
+  list-style-type: initial;
+  margin-left: 20px;
+}
+.MuiPaper-root {
+  width: 100% !important;
+}
+.MuiAccordionDetails-root {
+  padding-top: 0 !important;
+}
 
 @media screen and (max-width: 1536px) {
   .faq-title h1 {

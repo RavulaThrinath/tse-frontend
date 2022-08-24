@@ -130,6 +130,7 @@ export default function Header() {
             <div className="su-user-details">
               <input type="text" placeholder="Full Name" required />
               <input type="email" placeholder="Email" required />
+              <input type="number" placeholder="Phone Number" required />
               <div className="password-input">
                 <input
                   type={isRevealPwd ? "text" : "password"}

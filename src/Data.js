@@ -5,7 +5,7 @@ import {
   BsBriefcase,
 } from "react-icons/bs";
 import { RiArticleLine } from "react-icons/ri";
-import { BiCrown, BiLockOpen, BiLock } from "react-icons/bi";
+import { BiLockOpen, BiLock } from "react-icons/bi";
 import { TbDeviceAnalytics } from "react-icons/tb";
 import { IoServerOutline } from "react-icons/io5";
 import { GiArtificialIntelligence } from "react-icons/gi";
@@ -36,35 +36,35 @@ export const navbarLinks = [
 export const landingContent = [
   {
     maintext: `Absoulte \n Trade Solution`,
-    subtext: `We provide the seamless trading solution for busy traders, Investors. Our trading solution makes trading work every time, everywhere.`,
+    subtext: `Explore the world of Seamless Absolute Trade Solutions crafted to meet your need for forex trading solutions at your fingertips.`,
     primaryBtn: "Get Started",
     secondaryBtn: "Watch Video",
     rightImage: "Landing 1",
   },
   {
-    maintext: `Round the Clock \n Trading and \n Intelligent Market \n Analysis`,
-    subtext: `There’s one for all, the hard work in trading comes in the preparation. The actual process of trading, however, should be possibly effortless and unimaginable.`,
+    maintext: `Round the Clock Trading and \n Intelligent Market Analysis`,
+    subtext: `We model price discovery patterns using an algorithmic model of price and order flow to explore market dynamics even when you are busy with other businesses or sleeping. We got you going.`,
     primaryBtn: "Get Started",
     secondaryBtn: "Watch Video",
     rightImage: "Landing 2",
   },
   {
-    maintext: `Risk Mitigation \n Portfolio \n Management`,
-    subtext: `Trading opportunities are like buses, do ensure you onboard the one going the right route. Success in trading requires an apt solution to meet market demands. The endless opportunity with the right solution.`,
+    maintext: `Risk Mitigation \n Portfolio Management`,
+    subtext: `RMPM remains the Core competence at TSE. We Assume and Accept risk, Avoid and Control risk, we keep the Watch with constant evaluation of trading portfolio.`,
     primaryBtn: "Get Started",
     secondaryBtn: "Watch Video",
     rightImage: "Landing 3",
   },
   {
-    maintext: `TSE- Private \n Partner of Choice.`,
-    subtext: `Our core business strategy is a happy trader, we go the extra mile to amplify your trading experience.`,
+    maintext: `TSE- Private \n Partner of Choice  `,
+    subtext: `Our support system is superior enough to successfully differentiate us among the competitive innovation ecosystem. We go the extra mile to amplify your trading experience.`,
     primaryBtn: "Get Started",
     secondaryBtn: "Watch Video",
     rightImage: "Landing 4",
   },
   {
-    maintext: `Successful \n Traders \n Community.`,
-    subtext: `Profitable trading could be for everyone but horizons belong to those who have infinite imagination, those who would not wait for it to come but would embrace the seamless solutions trade sense expert provides..`,
+    maintext: `Successful Traders \n Community`,
+    subtext: `Profitable trading could be for everyone but horizons belong to those who have infinite imagination, those who would not wait for it to come but would embrace the seamless solutions trade sense expert provides.`,
     primaryBtn: "Get Started",
     secondaryBtn: "Watch Video",
     rightImage: "Landing 4",
@@ -329,23 +329,14 @@ export const VpsList = [
   {
     icon: <BiLockOpen />,
     title: "Free Tier",
-    description:
-      "Trade Sense Expert Limited offers clients the opportunity to purchase virtual private servers to be used for the hosting of the Expert Advisor. The virtual proxy server enables the expert advisor access to constant internet and power supply for continuous position engagement. Upon the setting up of the expert advisor, clients would be onboarded in 3 phases;",
+    description: `TSE Ltd offers clients 5 trading days free trial of virtual proxy hosting and server management of the expert advisor. This free tier phase allows clients to integrate and explore the program in order to be able to understand and monitor trading profits progress, and confirm set up amongst other deliverables. This phase also gives clients the chance to familiarize with how the expert advisor operates and observe its position engagements.`,
     class: "cont-1",
   },
   {
     icon: <BiLock />,
     title: "Classic Tier",
-    description:
-      "Classic Tier offers 3 months virtual proxy hosting and server management of the expert advisor. Classic tier attracts monthly $15 virtual proxy hosting and $50 for Server Management services. The server management entails market analysis in relation to the expert advisor’s open positions, risk mitigation and portfolio management RMPM, account status report and expert recommendations in relation to the account status report.",
+    description: `Classic Tier offers 3 months virtual proxy hosting and server management of the expert advisor. Classic tier attracts monthly $15 virtual proxy hosting and $50 for Server Management services. The server management entails market analysis in relation to the expert advisor’s open positions, risk mitigation and portfolio management RMPM, account status report and expert recommendations in relation to the account status report.`,
     class: "cont-2",
-  },
-  {
-    icon: <BiCrown />,
-    title: "Premium Tier",
-    description:
-      "Clients can decide to migrate to Premium Tier. The plan offers 6 to 12 months of virtual proxy hosting and server management of the expert advisor. Premium Tier attracts monthly $15 virtual proxy hosting and $50 for Server Management services. 10% discount applies to 6 months subscription and 20% discount for 12months subscription. The server management entails market analysis in relation to the expert advisor’s open positions, risk mitigation and portfolio management RMPM, account status report and expert recommendations in relation to the account status report.",
-    class: "cont-3",
   },
 ];
 

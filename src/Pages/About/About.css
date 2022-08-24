@@ -14,5 +14,13 @@
 .who-we-are {
   margin-bottom: 20px;
 }
-/* Soothsayer has helped dozens fo Fortune 1000 & Midsize companies capture ROI via custom A.I. solutions */
-/* 00b4d8 */
+.vAndm {
+  margin-top: 25px;
+}
+.vison-points {
+  margin: 20px 0 0 20px;
+  list-style-type: initial;
+}
+.vison-points li {
+  margin-bottom: 5px;
+}

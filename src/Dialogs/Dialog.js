@@ -16,7 +16,7 @@ const Modal = ({
       <div className="modal-dialog" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <div className="modal-heading">
-            <h1 >{title}</h1>
+            <h1>{title}</h1>
             {heading && <div className="modal-sub-text">{heading}</div>}
             {title2 && <div className="modal-title-2">{title2}</div>}
             <p className="modal-title">{description}</p>

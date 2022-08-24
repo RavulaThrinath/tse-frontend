@@ -29,3 +29,10 @@
     font-size: 15px;
   }
 }
+.gs-btn {
+  all: unset;
+  color: #2a5298;
+}
+.gs-btn:hover {
+  text-decoration: underline;
+}

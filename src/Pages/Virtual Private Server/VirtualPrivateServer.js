@@ -16,7 +16,7 @@ export default function VirtualPrivateServer() {
           Advisor. The virtual proxy server enables the expert advisor access to
           constant internet and power supply for continuous position engagement.
           Upon the setting up of the expert advisor, clients would be onboarded
-          in 3 phases;
+          in 2 phases;
         </p>
         <div className="content-list vps-list">
           {VpsList.map((list, index) => {
