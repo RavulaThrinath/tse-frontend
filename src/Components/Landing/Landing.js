@@ -9,6 +9,7 @@ import googleicon from "../../Assets/Google icon.svg";
 import appleicon from "../../Assets/Apple icon.svg";
 import showPwdImg from "../../Assets/show.svg";
 import hidePwdImg from "../../Assets/hide.svg";
+// import LandingImage from "../../Assets/PPC Website Banner.png";
 import { Link } from "react-router-dom";
 
 export default function Landing() {
@@ -20,7 +21,7 @@ export default function Landing() {
     autoplaySpeed: 4000,
     speed: 500,
     arrows: false,
-    vertical: true,
+    vertical: false,
     verticalSwiping: true,
     slidesToShow: 1,
     pauseOnHover: false,
@@ -88,7 +89,7 @@ export default function Landing() {
         {landingContent.map((list, index) => {
           return (
             <div className="slides" key={index}>
-              <div>
+              <div className="landing-text">
                 <h2>{list.maintext}</h2>
                 <p>{list.subtext}</p>
                 <div className="landing-btns">
@@ -104,13 +105,12 @@ export default function Landing() {
                   </button>
                 </div>
               </div>
-              <div>
-                <img
-                  className="landing-img"
-                  src={require(`../../Assets/${list.rightImage}.svg`)}
-                  alt=""
-                />
-              </div>
+              <img
+                className="landing-img"
+                // src={LandingImage}
+                src={require(`../../Assets/${list.rightImage}.png`)}
+                alt=""
+              />
             </div>
           );
         })}

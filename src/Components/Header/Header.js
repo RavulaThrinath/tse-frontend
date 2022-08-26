@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
-import Logo2 from "../../Assets/Logo2.svg";
+import Logo2 from "../../Assets/TSE Logo-01.png";
 import showPwdImg from "../../Assets/show.svg";
 import hidePwdImg from "../../Assets/hide.svg";
 import { NavLink, Link } from "react-router-dom";

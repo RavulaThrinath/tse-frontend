@@ -27,7 +27,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80px;
+  width: 100px;
 }
 .navigation-menu {
   display: flex;
@@ -94,7 +94,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 65px;
+    width: 85px;
   }
   .navigation-menu {
     gap: 110px;
@@ -121,7 +121,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60px;
+    width: 90px;
   }
   .navigation-menu {
     gap: 110px;
@@ -147,7 +147,7 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50px;
+    width: 80px;
   }
   .navigation-menu {
     gap: 100px;
@@ -183,7 +183,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(0%, -50%);
-    width: 50px;
+    width: 75px;
   }
   .navigation-menu {
     position: absolute;

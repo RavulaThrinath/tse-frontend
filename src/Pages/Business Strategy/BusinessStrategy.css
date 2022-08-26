@@ -1,0 +1,27 @@
+.bs-points {
+  margin-left: 60px;
+}
+.content-text-head {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+.bs-sub-points {
+  font-weight: normal;
+  margin-top: 6px;
+  list-style-type: circle;
+}
+.arrow-points-bs {
+  font-weight: 500;
+  margin: 20px 0;
+  margin-top: 20px;
+}
+.arrow-head-bs {
+  margin-top: 20px;
+}
+.arrow-sub-points-bs {
+  font-weight: normal;
+  margin-left: 40px;
+  list-style-type: circle;
+}

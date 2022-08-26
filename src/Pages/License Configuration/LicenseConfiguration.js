@@ -71,6 +71,25 @@ export default function LicenseConfiguration() {
           </button>{" "}
           to maximize profits on your trading capital.
         </p>
+        <h3>Other Characteristics of the EA</h3>
+        <ul className="vison-points" style={{ marginTop: "10px" }}>
+          <li className="content-text">
+            Spread filter to avoid trading during bad market condition;
+          </li>
+          <li className="content-text">
+            {" "}
+            Recommended minimum balance for running full setup USD1400
+          </li>
+          <li className="content-text">
+            Adjustable base-lot size based on the volume of trading capital to
+            maximize profits;
+          </li>
+          <li className="content-text">
+            Trading hours - here, you can determine during which hours the EA
+            should be active
+          </li>
+          <li className="content-text">Trade exit management</li>
+        </ul>
       </div>
       {showSignUp && (
         <div className="modal" onClick={signUpClose}>
