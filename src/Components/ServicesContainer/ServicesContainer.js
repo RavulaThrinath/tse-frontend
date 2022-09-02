@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ServicesContainer.css";
 import { ServicesContent } from "../../Data";
-import Tilt from "react-parallax-tilt";
+// import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
 import googleicon from "../../Assets/Google icon.svg";
 import appleicon from "../../Assets/Apple icon.svg";
@@ -61,7 +61,7 @@ export default function ServicesContainer() {
     <>
       <div className="services-list">
         {ServicesContent.map((list) => (
-          <Tilt
+          <div
             key={list.id}
             className="services-box"
             tiltReverse={true}
@@ -75,7 +75,7 @@ export default function ServicesContainer() {
             <button onClick={() => setShowSignUp(true)}>
               Learn more &#8594;
             </button>
-          </Tilt>
+          </div>
         ))}
       </div>
       {showSignUp && (

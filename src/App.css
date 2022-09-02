@@ -177,6 +177,8 @@ a {
   font: 600 25px "Manrope", sans-serif;
   color: #0f2137;
   margin-bottom: 7px;
+  background: none;
+  border: none;
 }
 .list-des {
   font: 100 24px "Commissioner", sans-serif;

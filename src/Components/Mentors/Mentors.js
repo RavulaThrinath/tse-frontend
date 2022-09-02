@@ -3,7 +3,8 @@ import "./Mentors.css";
 // import truetick from "../../Assets/Plan tick.svg";
 import truetick from "../../Assets/Tr.svg";
 // import MentorsImage from "../../Assets/Mentors Image.png";
-import MentorsImage from "../../Assets/Image 1 1.png";
+import MentorsImage from "../../Assets/Mentors Image.jpeg";
+// import MentorsImage from "../../Assets/Mentors Image.jpeg";
 import googleicon from "../../Assets/Google icon.svg";
 import appleicon from "../../Assets/Apple icon.svg";
 import showPwdImg from "../../Assets/show.svg";
@@ -62,11 +63,9 @@ export default function Mentors() {
     <>
       <div className="mentors-container">
         <div className="mentors-left">
-          <div className="mentor-title">
-            Our team of trading <br /> mentors is there for you
-          </div>
+          <div className="mentor-title">Our team</div>
           <p>
-            {`Our Team of Consultants is there for you to provide \n solution for seamless, profitable and financial growth \n at your finger tips. Leverage on the years of trading \n experience and finally crack the market with ease.`}
+            {`Our team of consultant is there at your finger tips to provide solution for seamless, profitable and financial growth. Leverage on the years of trading experience and finally crack the market with ease.`}
           </p>
           <div className="tick-points">
             <div className="ponints-list">

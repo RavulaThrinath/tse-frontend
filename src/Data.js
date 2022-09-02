@@ -132,25 +132,25 @@ export const stepsList = [
     id: 0,
     digit: `01`,
     title: `Register`,
-    description: `Open your Trade Sense \n Expert Account and join us.`,
+    description: `Start your journey to \n seamless trading solutions.`,
   },
   {
     id: 1,
     digit: `02`,
     title: `Login`,
-    description: `Confirm your information \n and complete your login`,
+    description: `Connect with us for more \n exclusive experience. `,
   },
   {
     id: 2,
     digit: `03`,
-    title: `Fund`,
-    description: `Through Bitcoin payment, \n fund your account`,
+    title: `Dashboard`,
+    description: `Explore unlimited \n access.`,
   },
   {
     id: 3,
     digit: `04`,
-    title: `Learn`,
-    description: `Through Bitcoin payment, \n fund your account`,
+    title: `Book a schedule`,
+    description: `Speak with a \n consultant.`,
   },
 ];
 

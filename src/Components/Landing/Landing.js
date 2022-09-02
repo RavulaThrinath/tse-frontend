@@ -9,8 +9,8 @@ import googleicon from "../../Assets/Google icon.svg";
 import appleicon from "../../Assets/Apple icon.svg";
 import showPwdImg from "../../Assets/show.svg";
 import hidePwdImg from "../../Assets/hide.svg";
-// import LandingImage from "../../Assets/PPC Website Banner.png";
 import { Link } from "react-router-dom";
+// import LandingImage from "../../Assets/PPC Website Banner.png";
 
 export default function Landing() {
   const settings = {
